@@ -39,10 +39,10 @@ export default function DataTable({ data }: { data: Model[] }) {
             CAPABILITIES
           </TableHead>
           <TableHead className="text-xs text-muted-foreground font-semibold">
-            INPUT MODE
+            INPUT MODAL
           </TableHead>
           <TableHead className="text-xs text-muted-foreground font-semibold">
-            OUTPUT MODE
+            OUTPUT MODAL
           </TableHead>
           <TableHead className="text-xs text-muted-foreground font-semibold">
             INPUT COST{" "}
@@ -70,6 +70,9 @@ export default function DataTable({ data }: { data: Model[] }) {
           </TableHead>
           <TableHead className="text-xs text-muted-foreground font-semibold">
             KNOWLEDGE
+            <span className="hidden md:block text-ring text-[10px]">
+              CUT OFF DATE
+            </span>
           </TableHead>
         </TableRow>
       </TableHeader>
