@@ -1,0 +1,29 @@
+{
+  "id": "o3-pro",
+  "name": "o3-pro",
+  "provider": "OpenAI",
+  "provider_id": "openai",
+  "capabilities": [
+    "tools",
+    "vision",
+    "reasoning"
+  ],
+  "attachment": true,
+  "temperature": false,
+  "knowledge": "2024-10",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 20,
+    "output": 80
+  },
+  "limit": {
+    "context": 200000,
+    "output": 100000
+  }
+}

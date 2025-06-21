@@ -1,0 +1,28 @@
+{
+  "id": "v0-1.5-lg",
+  "name": "v0-1.5-lg",
+  "provider": "Vercel",
+  "provider_id": "vercel",
+  "capabilities": [
+    "tools",
+    "vision",
+    "reasoning"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 15,
+    "output": 75
+  },
+  "limit": {
+    "context": 512000,
+    "output": 32000
+  }
+}

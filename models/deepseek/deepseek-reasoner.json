@@ -1,0 +1,28 @@
+{
+  "id": "deepseek-reasoner",
+  "name": "DeepSeek Reasoner",
+  "provider": "DeepSeek",
+  "provider_id": "deepseek",
+  "capabilities": [
+    "tools",
+    "reasoning"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-07",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.55,
+    "output": 2.19,
+    "cache_read": 0.14
+  },
+  "limit": {
+    "context": 65536,
+    "output": 8192
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "magistral-medium-latest",
+  "name": "Magistral Medium",
+  "provider": "Mistral",
+  "provider_id": "mistral",
+  "capabilities": [
+    "tools",
+    "reasoning"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2025-06",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 2,
+    "output": 5
+  },
+  "limit": {
+    "context": 128000,
+    "output": 16384
+  }
+}

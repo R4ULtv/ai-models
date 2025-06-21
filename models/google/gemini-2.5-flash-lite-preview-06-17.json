@@ -1,0 +1,32 @@
+{
+  "id": "gemini-2.5-flash-lite-preview-06-17",
+  "name": "Gemini 2.5 Flash Lite Preview 06-17",
+  "provider": "Google",
+  "provider_id": "google",
+  "capabilities": [
+    "tools",
+    "vision",
+    "reasoning"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-11",
+  "input_modalities": [
+    "text",
+    "image",
+    "audio",
+    "video"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.1,
+    "output": 0.4,
+    "cache_read": 0.025
+  },
+  "limit": {
+    "context": 65536,
+    "output": 65536
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "gpt-4.5-preview",
+  "name": "GPT-4.5 Preview",
+  "provider": "OpenAI",
+  "provider_id": "openai",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-04",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 75,
+    "output": 150,
+    "cache_read": 37.5
+  },
+  "limit": {
+    "context": 128000,
+    "output": 16384
+  }
+}

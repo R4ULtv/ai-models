@@ -1,0 +1,30 @@
+{
+  "id": "gemini-2.0-flash-lite",
+  "name": "Gemini 2.0 Flash Lite",
+  "provider": "Google",
+  "provider_id": "google",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-08",
+  "input_modalities": [
+    "text",
+    "image",
+    "audio",
+    "video"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.075,
+    "output": 0.3
+  },
+  "limit": {
+    "context": 1048576,
+    "output": 8192
+  }
+}

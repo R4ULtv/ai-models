@@ -1,0 +1,28 @@
+{
+  "id": "v0-1.5-md",
+  "name": "v0-1.5-md",
+  "provider": "Vercel",
+  "provider_id": "vercel",
+  "capabilities": [
+    "tools",
+    "vision",
+    "reasoning"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 3,
+    "output": 15
+  },
+  "limit": {
+    "context": 128000,
+    "output": 32000
+  }
+}

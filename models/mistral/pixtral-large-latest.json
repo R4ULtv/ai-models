@@ -1,0 +1,28 @@
+{
+  "id": "pixtral-large-latest",
+  "name": "Pixtral Large",
+  "provider": "Mistral",
+  "provider_id": "mistral",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-11",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 2,
+    "output": 6
+  },
+  "limit": {
+    "context": 128000,
+    "output": 128000
+  }
+}

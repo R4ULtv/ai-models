@@ -1,0 +1,30 @@
+{
+  "id": "claude-3-5-haiku-20241022",
+  "name": "Claude 3.5 Haiku",
+  "provider": "Anthropic",
+  "provider_id": "anthropic",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-07-31",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.8,
+    "output": 4,
+    "cache_read": 0.08,
+    "cache_write": 0.08
+  },
+  "limit": {
+    "context": 200000,
+    "output": 8192
+  }
+}

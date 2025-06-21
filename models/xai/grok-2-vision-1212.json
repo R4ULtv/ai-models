@@ -1,0 +1,30 @@
+{
+  "id": "grok-2-vision-1212",
+  "name": "Grok 2 Vision (1212)",
+  "provider": "xAI",
+  "provider_id": "xai",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-08",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 2,
+    "output": 10,
+    "cache_read": 2,
+    "cache_write": 10
+  },
+  "limit": {
+    "context": 8192,
+    "output": 4096
+  }
+}

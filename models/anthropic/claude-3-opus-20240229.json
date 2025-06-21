@@ -1,0 +1,30 @@
+{
+  "id": "claude-3-opus-20240229",
+  "name": "Claude 3 Opus",
+  "provider": "Anthropic",
+  "provider_id": "anthropic",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2023-08-31",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 15,
+    "output": 75,
+    "cache_read": 1.5,
+    "cache_write": 1.5
+  },
+  "limit": {
+    "context": 200000,
+    "output": 4096
+  }
+}

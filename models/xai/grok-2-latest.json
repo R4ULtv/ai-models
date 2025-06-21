@@ -1,0 +1,28 @@
+{
+  "id": "grok-2-latest",
+  "name": "Grok 2 Latest",
+  "provider": "xAI",
+  "provider_id": "xai",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-08",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 2,
+    "output": 10,
+    "cache_read": 2,
+    "cache_write": 10
+  },
+  "limit": {
+    "context": 131072,
+    "output": 8192
+  }
+}

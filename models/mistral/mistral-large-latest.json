@@ -1,0 +1,26 @@
+{
+  "id": "mistral-large-latest",
+  "name": "Mistral Large",
+  "provider": "Mistral",
+  "provider_id": "mistral",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-11",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 2,
+    "output": 6
+  },
+  "limit": {
+    "context": 131072,
+    "output": 16384
+  }
+}

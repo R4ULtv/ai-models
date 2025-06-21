@@ -1,0 +1,32 @@
+{
+  "id": "gemini-2.5-flash",
+  "name": "Gemini 2.5 Flash",
+  "provider": "Google",
+  "provider_id": "google",
+  "capabilities": [
+    "tools",
+    "vision",
+    "reasoning"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-11",
+  "input_modalities": [
+    "text",
+    "image",
+    "audio",
+    "video"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.3,
+    "output": 2.5,
+    "cache_read": 0.075
+  },
+  "limit": {
+    "context": 1048576,
+    "output": 65536
+  }
+}

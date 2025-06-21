@@ -1,0 +1,28 @@
+{
+  "id": "mistral-medium-latest",
+  "name": "Mistral Medium",
+  "provider": "Mistral",
+  "provider_id": "mistral",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2025-05",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.4,
+    "output": 2
+  },
+  "limit": {
+    "context": 128000,
+    "output": 16384
+  }
+}

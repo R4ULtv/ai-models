@@ -1,0 +1,28 @@
+{
+  "id": "grok-3-latest",
+  "name": "Grok 3 Latest",
+  "provider": "xAI",
+  "provider_id": "xai",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-11",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 3,
+    "output": 15,
+    "cache_read": 0.75,
+    "cache_write": 15
+  },
+  "limit": {
+    "context": 131072,
+    "output": 8192
+  }
+}

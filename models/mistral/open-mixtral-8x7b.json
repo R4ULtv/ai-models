@@ -1,0 +1,26 @@
+{
+  "id": "open-mixtral-8x7b",
+  "name": "Mixtral 8x7B",
+  "provider": "Mistral",
+  "provider_id": "mistral",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-01",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.7,
+    "output": 0.7
+  },
+  "limit": {
+    "context": 32000,
+    "output": 32000
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "grok-beta",
+  "name": "Grok Beta",
+  "provider": "xAI",
+  "provider_id": "xai",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-08",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 5,
+    "output": 15,
+    "cache_read": 5,
+    "cache_write": 15
+  },
+  "limit": {
+    "context": 131072,
+    "output": 4096
+  }
+}

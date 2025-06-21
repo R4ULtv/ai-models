@@ -1,0 +1,31 @@
+{
+  "id": "claude-opus-4-20250514",
+  "name": "Claude 4 Opus",
+  "provider": "Anthropic",
+  "provider_id": "anthropic",
+  "capabilities": [
+    "tools",
+    "vision",
+    "reasoning"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2025-03-31",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 15,
+    "output": 75,
+    "cache_read": 1.5,
+    "cache_write": 1.5
+  },
+  "limit": {
+    "context": 200000,
+    "output": 32000
+  }
+}

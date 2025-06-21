@@ -1,0 +1,33 @@
+{
+  "id": "gemini-2.5-pro",
+  "name": "Gemini 2.5 Pro",
+  "provider": "Google",
+  "provider_id": "google",
+  "capabilities": [
+    "tools",
+    "vision",
+    "reasoning"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-11",
+  "input_modalities": [
+    "text",
+    "image",
+    "audio",
+    "video",
+    "pdf"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 1.25,
+    "output": 10,
+    "cache_read": 0.31
+  },
+  "limit": {
+    "context": 1048576,
+    "output": 65536
+  }
+}

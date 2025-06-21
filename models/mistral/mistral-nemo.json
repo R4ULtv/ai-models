@@ -1,0 +1,26 @@
+{
+  "id": "mistral-nemo",
+  "name": "Mistral Nemo",
+  "provider": "Mistral",
+  "provider_id": "mistral",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-07",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.15,
+    "output": 0.15
+  },
+  "limit": {
+    "context": 128000,
+    "output": 128000
+  }
+}
