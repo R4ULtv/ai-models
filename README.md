@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI DB 🤖
+
+An open-source database of AI models with a modern web interface to explore and compare different AI models from various providers.
+
+## Features
+
+- **Comprehensive Model Database**: Curated collection of AI models from major providers
+- **Rich Metadata**: Detailed information about capabilities, costs, limits, and modalities
+- **Interactive Data Table**: Sortable and filterable interface to explore models
+- **Modern UI**: Built with Next.js 15, Tailwind CSS, and Radix UI components
+- **Type Safety**: Full TypeScript support with Zod schema validation
+- **Dark Mode**: Elegant dark theme for better viewing experience
+
+## Supported Providers
+
+- **OpenAI** - GPT models and more
+- **Anthropic** - Claude models
+- **Google** - Gemini models
+- **Mistral** - Mistral AI models
+- **DeepSeek** - DeepSeek models
+- **Vercel** - AI models
+- **xAI** - Grok models
+
+## Model Information
+
+Each model includes comprehensive metadata:
+
+- **Basic Info**: Name, provider, unique identifiers
+- **Capabilities**: Tools, vision, reasoning, embedding support
+- **Modalities**: Input/output support for text, audio, image, video, PDF
+- **Pricing**: Input/output costs per million tokens, cache pricing
+- **Limits**: Context window and output token limits
+- **Features**: Temperature support, attachment handling, knowledge cutoff
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 20+
+- pnpm (recommended) or npm
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/R4ULtv/ai-db.git
+cd ai-db
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## Adding New Models
 
-To learn more about Next.js, take a look at the following resources:
+To add a new model to the database:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Create a JSON file in the appropriate provider directory under `models/`
+2. Follow the schema structure defined in `lib/schema.ts`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```json
+{
+  "id": "model-id",
+  "name": "Model Name",
+  "provider": "Provider Name",
+  "provider_id": "provider_slug",
+  "capabilities": ["tools", "vision"],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-01",
+  "input_modalities": ["text", "image"],
+  "output_modalities": ["text"],
+  "cost": {
+    "input": 2.5,
+    "output": 10,
+    "cache_read": 1.25
+  },
+  "limit": {
+    "context": 128000,
+    "output": 4096
+  }
+}
+```
 
-## Deploy on Vercel
+### Schema Fields
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `id`: Unique identifier for the model
+- `name`: Display name of the model
+- `provider`: Human-readable provider name
+- `provider_id`: Provider identifier slug
+- `capabilities`: Array of supported capabilities
+- `attachment`: Whether the model supports file attachments
+- `temperature`: Whether the model supports temperature parameter
+- `knowledge`: Knowledge cutoff date (optional)
+- `input_modalities`: Supported input types (optional)
+- `output_modalities`: Supported output types (optional)
+- `cost`: Pricing information (per million tokens)
+- `limit`: Context and output token limits
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+### Guidelines
+
+1. Follow the existing code style and conventions
+2. Add appropriate TypeScript types
+3. Update documentation as needed
+4. Test your changes thoroughly
+5. Follow the model schema when adding new models
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/)
+- UI components from [Radix UI](https://www.radix-ui.com/)
+- Icons from [Lucide](https://lucide.dev/)
+- Styling with [Tailwind CSS](https://tailwindcss.com/)
+
+## Support
+
+If you find this project helpful, please consider giving it a star ⭐ on GitHub!
+
+For questions or support, please open an issue on the GitHub repository.
