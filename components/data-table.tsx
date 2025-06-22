@@ -14,11 +14,11 @@ import {
   BrainIcon,
   EyeIcon,
   FileTextIcon,
-  HeadphonesIcon,
   ImageIcon,
   ShapesIcon,
   TypeIcon,
   VideoIcon,
+  Volume2Icon,
   WrenchIcon,
 } from "lucide-react";
 import ProviderLogo from "@/components/provider-logo";
@@ -39,10 +39,16 @@ export default function DataTable({ data }: { data: Model[] }) {
             CAPABILITIES
           </TableHead>
           <TableHead className="text-xs text-muted-foreground font-semibold">
-            INPUT MODAL
+            INPUT
+            <span className="hidden md:block text-ring text-[10px]">
+              MODALITIES
+            </span>
           </TableHead>
           <TableHead className="text-xs text-muted-foreground font-semibold">
-            OUTPUT MODAL
+            OUTPUT
+            <span className="hidden md:block text-ring text-[10px]">
+              MODALITIES
+            </span>
           </TableHead>
           <TableHead className="text-xs text-muted-foreground font-semibold">
             INPUT COST{" "}
@@ -110,7 +116,7 @@ export default function DataTable({ data }: { data: Model[] }) {
                   className="p-1 text-muted-foreground"
                 >
                   {modality === "text" && <TypeIcon />}
-                  {modality === "audio" && <HeadphonesIcon />}
+                  {modality === "audio" && <Volume2Icon />}
                   {modality === "image" && <ImageIcon />}
                   {modality === "video" && <VideoIcon />}
                   {modality === "pdf" && <FileTextIcon />}
@@ -125,7 +131,7 @@ export default function DataTable({ data }: { data: Model[] }) {
                   className="p-1 text-muted-foreground"
                 >
                   {modality === "text" && <TypeIcon />}
-                  {modality === "audio" && <HeadphonesIcon />}
+                  {modality === "audio" && <Volume2Icon />}
                   {modality === "image" && <ImageIcon />}
                   {modality === "pdf" && <FileTextIcon />}
                 </Badge>
