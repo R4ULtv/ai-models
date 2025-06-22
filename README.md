@@ -1,4 +1,4 @@
-# AI DB 🤖
+![AI-DB](./public/og-image.png)
 
 An open-source database of AI models with a modern web interface to explore and compare different AI models from various providers.
 
