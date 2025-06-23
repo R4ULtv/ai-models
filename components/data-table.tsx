@@ -15,7 +15,7 @@ import {
   EyeIcon,
   FileTextIcon,
   ImageIcon,
-  ShapesIcon,
+  SquareFunctionIcon,
   TypeIcon,
   VideoIcon,
   Volume2Icon,
@@ -104,7 +104,7 @@ export default function DataTable({ data }: { data: Model[] }) {
                   {capability === "tools" && <WrenchIcon />}
                   {capability === "vision" && <EyeIcon />}
                   {capability === "reasoning" && <BrainIcon />}
-                  {capability === "embedding" && <ShapesIcon />}
+                  {capability === "embedding" && <SquareFunctionIcon />}
                 </Badge>
               ))}
             </TableCell>
