@@ -5,8 +5,8 @@
   "provider_id": "vercel",
   "capabilities": [
     "tools",
-    "vision",
-    "reasoning"
+    "reasoning",
+    "vision"
   ],
   "attachment": true,
   "temperature": true,

@@ -9,7 +9,7 @@
   ],
   "attachment": true,
   "temperature": true,
-  "knowledge": "2023-10",
+  "knowledge": "2023-09",
   "input_modalities": [
     "text",
     "image"

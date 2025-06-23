@@ -1,6 +1,6 @@
 {
   "id": "gpt-4o-mini",
-  "name": "GPT-4o Mini",
+  "name": "GPT-4o mini",
   "provider": "OpenAI",
   "provider_id": "openai",
   "capabilities": [
@@ -9,7 +9,7 @@
   ],
   "attachment": true,
   "temperature": true,
-  "knowledge": "2023-10",
+  "knowledge": "2023-09",
   "input_modalities": [
     "text",
     "image"

@@ -1,6 +1,6 @@
 {
   "id": "gpt-4.1-nano",
-  "name": "GPT-4.1 Nano",
+  "name": "GPT-4.1 nano",
   "provider": "OpenAI",
   "provider_id": "openai",
   "capabilities": [

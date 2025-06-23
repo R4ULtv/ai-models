@@ -5,8 +5,8 @@
   "provider_id": "google",
   "capabilities": [
     "tools",
-    "vision",
-    "reasoning"
+    "reasoning",
+    "vision"
   ],
   "attachment": true,
   "temperature": true,
