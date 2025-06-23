@@ -8,6 +8,10 @@ import {
   Google,
   Vercel,
   Groq,
+  MicrosoftAzure,
+  Meta,
+  GitHub,
+  AmazonWebServices,
 } from "@/components/icons";
 
 const providerLogoMap: Record<string, React.FC> = {
@@ -19,6 +23,10 @@ const providerLogoMap: Record<string, React.FC> = {
   google: Google,
   vercel: Vercel,
   groq: Groq,
+  azure: MicrosoftAzure,
+  llama: Meta,
+  "github-copilot": GitHub,
+  "amazon-bedrock": AmazonWebServices,
 };
 
 export function ProviderLogo({
