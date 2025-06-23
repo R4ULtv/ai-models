@@ -1,0 +1,24 @@
+{
+  "id": "gpt-3.5-turbo-instruct",
+  "name": "GPT-3.5 Turbo Instruct",
+  "provider": "Azure",
+  "provider_id": "azure",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2021-08",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 1.5,
+    "output": 2
+  },
+  "limit": {
+    "context": 4096,
+    "output": 4096
+  }
+}

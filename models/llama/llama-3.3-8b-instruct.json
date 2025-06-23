@@ -1,0 +1,26 @@
+{
+  "id": "llama-3.3-8b-instruct",
+  "name": "Llama-3.3-8B-Instruct",
+  "provider": "Llama",
+  "provider_id": "llama",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2023-12",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0,
+    "output": 0
+  },
+  "limit": {
+    "context": 128000,
+    "output": 4096
+  }
+}

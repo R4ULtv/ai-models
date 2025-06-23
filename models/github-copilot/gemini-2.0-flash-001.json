@@ -1,0 +1,31 @@
+{
+  "id": "gemini-2.0-flash-001",
+  "name": "Gemini 2.0 Flash",
+  "provider": "GitHub Copilot",
+  "provider_id": "github-copilot",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-04",
+  "input_modalities": [
+    "text",
+    "image",
+    "audio",
+    "video"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0,
+    "output": 0,
+    "cache_read": 0
+  },
+  "limit": {
+    "context": 1000000,
+    "output": 8192
+  }
+}

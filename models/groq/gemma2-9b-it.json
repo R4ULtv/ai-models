@@ -1,0 +1,26 @@
+{
+  "id": "gemma2-9b-it",
+  "name": "Gemma 2 9B",
+  "provider": "Groq",
+  "provider_id": "groq",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-06",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.2,
+    "output": 0.2
+  },
+  "limit": {
+    "context": 8192,
+    "output": 8192
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "o1-mini",
+  "name": "o1-mini",
+  "provider": "Azure",
+  "provider_id": "azure",
+  "capabilities": [
+    "tools",
+    "reasoning"
+  ],
+  "attachment": false,
+  "temperature": false,
+  "knowledge": "2023-09",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 1.1,
+    "output": 4.4,
+    "cache_read": 0.55
+  },
+  "limit": {
+    "context": 128000,
+    "output": 65536
+  }
+}

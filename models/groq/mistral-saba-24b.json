@@ -1,0 +1,26 @@
+{
+  "id": "mistral-saba-24b",
+  "name": "Mistral Saba 24B",
+  "provider": "Groq",
+  "provider_id": "groq",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-08",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.79,
+    "output": 0.79
+  },
+  "limit": {
+    "context": 32768,
+    "output": 32768
+  }
+}

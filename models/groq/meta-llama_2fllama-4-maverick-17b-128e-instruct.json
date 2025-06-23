@@ -1,0 +1,28 @@
+{
+  "id": "meta-llama%2fllama-4-maverick-17b-128e-instruct",
+  "name": "Llama 4 Maverick 17B",
+  "provider": "Groq",
+  "provider_id": "groq",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-08",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.2,
+    "output": 0.6
+  },
+  "limit": {
+    "context": 131072,
+    "output": 8192
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "anthropic.claude-opus-4-20250514-v1:0",
+  "name": "Claude Opus 4",
+  "provider": "Amazon Bedrock",
+  "provider_id": "amazon-bedrock",
+  "capabilities": [
+    "tools",
+    "reasoning",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-04",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 15,
+    "output": 75,
+    "cache_read": 1.5,
+    "cache_write": 18.75
+  },
+  "limit": {
+    "context": 200000,
+    "output": 32000
+  }
+}

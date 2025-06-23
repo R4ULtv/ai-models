@@ -1,0 +1,28 @@
+{
+  "id": "llama-4-maverick-17b-128e-instruct-fp8",
+  "name": "Llama-4-Maverick-17B-128E-Instruct-FP8",
+  "provider": "Llama",
+  "provider_id": "llama",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-08",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0,
+    "output": 0
+  },
+  "limit": {
+    "context": 128000,
+    "output": 4096
+  }
+}

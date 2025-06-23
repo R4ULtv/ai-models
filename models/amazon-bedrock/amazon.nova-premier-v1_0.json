@@ -1,0 +1,30 @@
+{
+  "id": "amazon.nova-premier-v1:0",
+  "name": "Nova Premier",
+  "provider": "Amazon Bedrock",
+  "provider_id": "amazon-bedrock",
+  "capabilities": [
+    "tools",
+    "reasoning",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-10",
+  "input_modalities": [
+    "text",
+    "image",
+    "video"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 2.5,
+    "output": 12.5
+  },
+  "limit": {
+    "context": 1000000,
+    "output": 16384
+  }
+}

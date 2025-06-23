@@ -1,0 +1,28 @@
+{
+  "id": "anthropic.claude-3-sonnet-20240229-v1:0",
+  "name": "Claude 3 Sonnet",
+  "provider": "Amazon Bedrock",
+  "provider_id": "amazon-bedrock",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2023-08",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 3,
+    "output": 15
+  },
+  "limit": {
+    "context": 200000,
+    "output": 4096
+  }
+}

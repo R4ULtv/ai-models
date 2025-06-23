@@ -1,0 +1,26 @@
+{
+  "id": "o3-mini",
+  "name": "o3-mini",
+  "provider": "GitHub Copilot",
+  "provider_id": "github-copilot",
+  "capabilities": [
+    "reasoning"
+  ],
+  "attachment": false,
+  "temperature": false,
+  "knowledge": "2024-10",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0,
+    "output": 0
+  },
+  "limit": {
+    "context": 128000,
+    "output": 65536
+  }
+}

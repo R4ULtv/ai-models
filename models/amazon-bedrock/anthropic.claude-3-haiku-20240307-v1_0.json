@@ -1,0 +1,28 @@
+{
+  "id": "anthropic.claude-3-haiku-20240307-v1:0",
+  "name": "Claude 3 Haiku",
+  "provider": "Amazon Bedrock",
+  "provider_id": "amazon-bedrock",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-02",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.25,
+    "output": 1.25
+  },
+  "limit": {
+    "context": 200000,
+    "output": 4096
+  }
+}

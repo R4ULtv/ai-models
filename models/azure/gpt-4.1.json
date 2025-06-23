@@ -1,0 +1,29 @@
+{
+  "id": "gpt-4.1",
+  "name": "GPT-4.1",
+  "provider": "Azure",
+  "provider_id": "azure",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-05",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 2,
+    "output": 8,
+    "cache_read": 0.5
+  },
+  "limit": {
+    "context": 1047576,
+    "output": 32768
+  }
+}

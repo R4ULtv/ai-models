@@ -1,0 +1,26 @@
+{
+  "id": "ai21.jamba-1-5-mini-v1:0",
+  "name": "Jamba 1.5 Mini",
+  "provider": "Amazon Bedrock",
+  "provider_id": "amazon-bedrock",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-08",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.2,
+    "output": 0.4
+  },
+  "limit": {
+    "context": 256000,
+    "output": 4096
+  }
+}

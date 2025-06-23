@@ -1,0 +1,29 @@
+{
+  "id": "gpt-4.1-mini",
+  "name": "GPT-4.1 mini",
+  "provider": "Azure",
+  "provider_id": "azure",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-05",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.4,
+    "output": 1.6,
+    "cache_read": 0.1
+  },
+  "limit": {
+    "context": 1047576,
+    "output": 32768
+  }
+}

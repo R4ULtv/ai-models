@@ -1,0 +1,26 @@
+{
+  "id": "cerebras-llama-4-scout-17b-16e-instruct",
+  "name": "Cerebras-Llama-4-Scout-17B-16E-Instruct",
+  "provider": "Llama",
+  "provider_id": "llama",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2025-01",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0,
+    "output": 0
+  },
+  "limit": {
+    "context": 128000,
+    "output": 4096
+  }
+}

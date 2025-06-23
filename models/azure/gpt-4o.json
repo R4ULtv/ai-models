@@ -1,0 +1,29 @@
+{
+  "id": "gpt-4o",
+  "name": "GPT-4o",
+  "provider": "Azure",
+  "provider_id": "azure",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2023-09",
+  "input_modalities": [
+    "text",
+    "image"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 2.5,
+    "output": 10,
+    "cache_read": 1.25
+  },
+  "limit": {
+    "context": 128000,
+    "output": 16384
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "gpt-4-32k",
+  "name": "GPT-4 32K",
+  "provider": "Azure",
+  "provider_id": "azure",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2023-11",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 60,
+    "output": 120
+  },
+  "limit": {
+    "context": 32768,
+    "output": 32768
+  }
+}

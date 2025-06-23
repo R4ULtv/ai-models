@@ -1,0 +1,26 @@
+{
+  "id": "llama-3.3-70b-versatile",
+  "name": "Llama 3.3 70B Versatile",
+  "provider": "Groq",
+  "provider_id": "groq",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2023-12",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.59,
+    "output": 0.79
+  },
+  "limit": {
+    "context": 131072,
+    "output": 32768
+  }
+}

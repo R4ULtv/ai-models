@@ -1,0 +1,26 @@
+{
+  "id": "qwen%2fqwen3-32b",
+  "name": "Qwen3 32B",
+  "provider": "Groq",
+  "provider_id": "groq",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-11-08",
+  "input_modalities": [
+    "text"
+  ],
+  "output_modalities": [
+    "text"
+  ],
+  "cost": {
+    "input": 0.29,
+    "output": 0.59
+  },
+  "limit": {
+    "context": 131072,
+    "output": 16384
+  }
+}
