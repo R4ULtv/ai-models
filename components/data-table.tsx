@@ -63,6 +63,18 @@ export default function DataTable({ data }: { data: Model[] }) {
             </span>
           </TableHead>
           <TableHead className="text-xs text-muted-foreground font-semibold">
+            CACHE READ COST{" "}
+            <span className="hidden md:block text-ring text-[10px]">
+              PER 1M TOKENS
+            </span>
+          </TableHead>
+          <TableHead className="text-xs text-muted-foreground font-semibold">
+            CACHE WRITE COST{" "}
+            <span className="hidden md:block text-ring text-[10px]">
+              PER 1M TOKENS
+            </span>
+          </TableHead>
+          <TableHead className="text-xs text-muted-foreground font-semibold">
             CONTEXT LIMIT{" "}
             <span className="hidden md:block text-ring text-[10px]">
               TOKENS
@@ -95,18 +107,20 @@ export default function DataTable({ data }: { data: Model[] }) {
               {model.id}
             </TableCell>
             <TableCell className="space-x-1">
-              {model.capabilities.map((capability) => (
-                <Badge
-                  key={capability}
-                  variant="outline"
-                  className="p-1 text-muted-foreground"
-                >
-                  {capability === "tools" && <WrenchIcon />}
-                  {capability === "vision" && <EyeIcon />}
-                  {capability === "reasoning" && <BrainIcon />}
-                  {capability === "embedding" && <SquareFunctionIcon />}
-                </Badge>
-              ))}
+              {model.capabilities.length > 0
+                ? model.capabilities.map((capability) => (
+                    <Badge
+                      key={capability}
+                      variant="outline"
+                      className="p-1 text-muted-foreground"
+                    >
+                      {capability === "tools" && <WrenchIcon />}
+                      {capability === "vision" && <EyeIcon />}
+                      {capability === "reasoning" && <BrainIcon />}
+                      {capability === "embedding" && <SquareFunctionIcon />}
+                    </Badge>
+                  ))
+                : "-"}
             </TableCell>
             <TableCell className="space-x-1">
               {model.input_modalities?.map((modality) => (
@@ -144,13 +158,23 @@ export default function DataTable({ data }: { data: Model[] }) {
               {numeral(model.cost.output).format("$0.00")}
             </TableCell>
             <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
+              {model.cost.cache_write
+                ? numeral(model.cost.cache_write).format("$0.00")
+                : "-"}
+            </TableCell>
+            <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
+              {model.cost.cache_read
+                ? numeral(model.cost.cache_read).format("$0.00")
+                : "-"}
+            </TableCell>
+            <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
               {numeral(model.limit.context).format("0,0")}
             </TableCell>
             <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
               {numeral(model.limit.output).format("0,0")}
             </TableCell>
             <TableCell className="font-mono text-xs text-muted-foreground">
-              {model.knowledge}
+              {model.knowledge ? model.knowledge : "-"}
             </TableCell>
           </TableRow>
         ))}
