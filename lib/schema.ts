@@ -12,11 +12,13 @@ export const modelSchema = z.object({
   attachment: z.boolean(),
   temperature: z.boolean(),
   knowledge: z.string().optional(),
-  input_modalities: z.array(modalitySchema).optional(),
-  output_modalities: z.array(modalitySchema).optional(),
+  modalities: z.object({
+    input: z.array(modalitySchema).optional(),
+    output: z.array(modalitySchema).optional(),
+  }),
   cost: z.object({
-    input: z.number(),
-    output: z.number(),
+    input: z.number().optional(),
+    output: z.number().optional(),
     cache_read: z.number().optional(),
     cache_write: z.number().optional(),
   }),
