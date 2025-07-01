@@ -1,0 +1,30 @@
+{
+  "id": "x-ai/grok-3-beta",
+  "name": "Grok 3 Beta",
+  "provider": "OpenRouter",
+  "provider_id": "openrouter",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-11",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 3,
+    "output": 15,
+    "cache_read": 0.75,
+    "cache_write": 15
+  },
+  "limit": {
+    "context": 131072,
+    "output": 8192
+  }
+}
