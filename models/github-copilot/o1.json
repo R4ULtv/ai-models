@@ -9,16 +9,15 @@
   "attachment": false,
   "temperature": false,
   "knowledge": "2023-10",
-  "input_modalities": [
-    "text"
-  ],
-  "output_modalities": [
-    "text"
-  ],
-  "cost": {
-    "input": 0,
-    "output": 0
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
+  "cost": {},
   "limit": {
     "context": 128000,
     "output": 32768

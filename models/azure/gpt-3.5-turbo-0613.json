@@ -7,12 +7,14 @@
   "attachment": false,
   "temperature": true,
   "knowledge": "2021-08",
-  "input_modalities": [
-    "text"
-  ],
-  "output_modalities": [
-    "text"
-  ],
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
   "cost": {
     "input": 3,
     "output": 4

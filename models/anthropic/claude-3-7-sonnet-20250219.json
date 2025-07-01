@@ -1,6 +1,6 @@
 {
   "id": "claude-3-7-sonnet-20250219",
-  "name": "Claude 3.7 Sonnet",
+  "name": "Claude Sonnet 3.7",
   "provider": "Anthropic",
   "provider_id": "anthropic",
   "capabilities": [
@@ -11,18 +11,20 @@
   "attachment": true,
   "temperature": true,
   "knowledge": "2024-10-31",
-  "input_modalities": [
-    "text",
-    "image"
-  ],
-  "output_modalities": [
-    "text"
-  ],
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
   "cost": {
     "input": 3,
     "output": 15,
     "cache_read": 0.3,
-    "cache_write": 0.3
+    "cache_write": 3.75
   },
   "limit": {
     "context": 200000,

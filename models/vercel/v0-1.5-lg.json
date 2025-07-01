@@ -10,13 +10,15 @@
   ],
   "attachment": true,
   "temperature": true,
-  "input_modalities": [
-    "text",
-    "image"
-  ],
-  "output_modalities": [
-    "text"
-  ],
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
   "cost": {
     "input": 15,
     "output": 75

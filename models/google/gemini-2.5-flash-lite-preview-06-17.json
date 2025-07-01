@@ -10,16 +10,19 @@
   ],
   "attachment": true,
   "temperature": true,
-  "knowledge": "2024-11",
-  "input_modalities": [
-    "text",
-    "image",
-    "audio",
-    "video"
-  ],
-  "output_modalities": [
-    "text"
-  ],
+  "knowledge": "2025-01",
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "audio",
+      "video",
+      "pdf"
+    ],
+    "output": [
+      "text"
+    ]
+  },
   "cost": {
     "input": 0.1,
     "output": 0.4,

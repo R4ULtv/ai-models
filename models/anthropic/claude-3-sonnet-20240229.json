@@ -1,6 +1,6 @@
 {
   "id": "claude-3-sonnet-20240229",
-  "name": "Claude 3 Sonnet",
+  "name": "Claude Sonnet 3",
   "provider": "Anthropic",
   "provider_id": "anthropic",
   "capabilities": [
@@ -10,13 +10,15 @@
   "attachment": true,
   "temperature": true,
   "knowledge": "2023-08-31",
-  "input_modalities": [
-    "text",
-    "image"
-  ],
-  "output_modalities": [
-    "text"
-  ],
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
   "cost": {
     "input": 3,
     "output": 15,

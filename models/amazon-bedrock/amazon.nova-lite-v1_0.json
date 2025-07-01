@@ -10,14 +10,16 @@
   "attachment": true,
   "temperature": true,
   "knowledge": "2024-10",
-  "input_modalities": [
-    "text",
-    "image",
-    "video"
-  ],
-  "output_modalities": [
-    "text"
-  ],
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
   "cost": {
     "input": 0.06,
     "output": 0.24,

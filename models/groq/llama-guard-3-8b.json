@@ -6,12 +6,14 @@
   "capabilities": [],
   "attachment": false,
   "temperature": true,
-  "input_modalities": [
-    "text"
-  ],
-  "output_modalities": [
-    "text"
-  ],
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
   "cost": {
     "input": 0.2,
     "output": 0.2

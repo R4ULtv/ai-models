@@ -11,13 +11,15 @@
   "attachment": true,
   "temperature": true,
   "knowledge": "2024-04",
-  "input_modalities": [
-    "text",
-    "image"
-  ],
-  "output_modalities": [
-    "text"
-  ],
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
   "cost": {
     "input": 3,
     "output": 15,

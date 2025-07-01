@@ -9,12 +9,14 @@
   "attachment": false,
   "temperature": true,
   "knowledge": "2024-10",
-  "input_modalities": [
-    "text"
-  ],
-  "output_modalities": [
-    "text"
-  ],
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
   "cost": {
     "input": 0.3,
     "output": 0.9
