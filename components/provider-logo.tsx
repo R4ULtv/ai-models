@@ -10,8 +10,9 @@ import {
   Groq,
   MicrosoftAzure,
   Meta,
-  GitHub,
+  GitHubCopilot,
   AmazonWebServices,
+  OpenRouter,
 } from "@/components/icons";
 
 const providerLogoMap: Record<string, React.FC> = {
@@ -25,8 +26,9 @@ const providerLogoMap: Record<string, React.FC> = {
   groq: Groq,
   azure: MicrosoftAzure,
   llama: Meta,
-  "github-copilot": GitHub,
+  "github-copilot": GitHubCopilot,
   "amazon-bedrock": AmazonWebServices,
+  openrouter: OpenRouter,
 };
 
 export function ProviderLogo({

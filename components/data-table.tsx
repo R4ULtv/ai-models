@@ -123,7 +123,7 @@ export default function DataTable({ data }: { data: Model[] }) {
                 : "-"}
             </TableCell>
             <TableCell className="space-x-1">
-              {model.input_modalities?.map((modality) => (
+              {model.modalities?.input?.map((modality) => (
                 <Badge
                   key={modality}
                   variant="outline"
@@ -138,7 +138,7 @@ export default function DataTable({ data }: { data: Model[] }) {
               ))}
             </TableCell>
             <TableCell className="space-x-1">
-              {model.output_modalities?.map((modality) => (
+              {model.modalities?.output?.map((modality) => (
                 <Badge
                   key={modality}
                   variant="outline"
