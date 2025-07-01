@@ -13,8 +13,8 @@ export const modelSchema = z.object({
   temperature: z.boolean(),
   knowledge: z.string().optional(),
   modalities: z.object({
-    input: z.array(modalitySchema).optional(),
-    output: z.array(modalitySchema).optional(),
+    input: z.array(modalitySchema),
+    output: z.array(modalitySchema),
   }),
   cost: z.object({
     input: z.number().optional(),

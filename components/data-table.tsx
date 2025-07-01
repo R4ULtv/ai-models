@@ -106,7 +106,7 @@ export default function DataTable({ data }: { data: Model[] }) {
             <TableCell className="font-mono text-xs text-muted-foreground">
               {model.id}
             </TableCell>
-            <TableCell className="space-x-1">
+            <TableCell className="font-mono text-xs text-muted-foreground space-x-1">
               {model.capabilities.length > 0
                 ? model.capabilities.map((capability) => (
                     <Badge
@@ -162,13 +162,13 @@ export default function DataTable({ data }: { data: Model[] }) {
                 : "-"}
             </TableCell>
             <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
-              {model.cost.cache_write
-                ? numeral(model.cost.cache_write).format("$0.00")
+              {model.cost.cache_read
+                ? numeral(model.cost.cache_read).format("$0.00")
                 : "-"}
             </TableCell>
             <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
-              {model.cost.cache_read
-                ? numeral(model.cost.cache_read).format("$0.00")
+              {model.cost.cache_write
+                ? numeral(model.cost.cache_write).format("$0.00")
                 : "-"}
             </TableCell>
             <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
