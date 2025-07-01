@@ -152,10 +152,14 @@ export default function DataTable({ data }: { data: Model[] }) {
               ))}
             </TableCell>
             <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
-              {numeral(model.cost.input).format("$0.00")}
+              {model.cost.input
+                ? numeral(model.cost.input).format("$0.00")
+                : "-"}
             </TableCell>
             <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
-              {numeral(model.cost.output).format("$0.00")}
+              {model.cost.output
+                ? numeral(model.cost.output).format("$0.00")
+                : "-"}
             </TableCell>
             <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
               {model.cost.cache_write
