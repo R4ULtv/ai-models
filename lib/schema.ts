@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z, toJSONSchema } from "zod/v4";
 
 const modalitySchema = z.enum(["text", "audio", "image", "video", "pdf"]);
 const capabilitySchema = z.enum(["tools", "vision", "reasoning", "embedding"]);
@@ -29,3 +29,7 @@ export const modelSchema = z.object({
 });
 
 export type Model = z.infer<typeof modelSchema>;
+export type Capability = z.infer<typeof capabilitySchema>;
+export type Modality = z.infer<typeof modalitySchema>;
+
+export const modelSchemaJSON = toJSONSchema(modelSchema);
