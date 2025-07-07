@@ -13,6 +13,7 @@ import {
   GitHubCopilot,
   AmazonWebServices,
   OpenRouter,
+  GoogleCloud,
 } from "@/components/icons";
 
 const providerLogoMap: Record<string, React.FC> = {
@@ -29,6 +30,7 @@ const providerLogoMap: Record<string, React.FC> = {
   "github-copilot": GitHubCopilot,
   "amazon-bedrock": AmazonWebServices,
   openrouter: OpenRouter,
+  "google-vertex": GoogleCloud,
 };
 
 export function ProviderLogo({
