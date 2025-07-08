@@ -1,25 +1,32 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import * as React from "react";
 import { useQueryState } from "nuqs";
 
 import { SearchIcon } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import { useDebounce } from "@/hooks/use-debounce";
 
 export default function SearchInput() {
+  const inputRef = React.useRef<HTMLInputElement>(null);
   const [search, setSearch] = useQueryState("search", { defaultValue: "" });
-  const inputRef = useRef<HTMLInputElement>(null);
+  const [inputValue, setInputValue] = React.useState(search);
+  const debounceSearch = useDebounce(inputValue, 200);
 
-  useEffect(() => {
-    const down = (e: KeyboardEvent) => {
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
         inputRef.current?.focus();
       }
     };
-    document.addEventListener("keydown", down);
-    return () => document.removeEventListener("keydown", down);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
+
+  React.useEffect(() => {
+    setSearch(debounceSearch);
+  }, [setSearch, debounceSearch]);
 
   return (
     <div className="relative">
@@ -28,8 +35,8 @@ export default function SearchInput() {
         className="ps-9 pe-11 h-8"
         placeholder="Search..."
         type="search"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
       />
       <div className="text-muted-foreground/80 pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 peer-disabled:opacity-50">
         <SearchIcon size={16} />
