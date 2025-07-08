@@ -1,6 +1,6 @@
 "use client";
 
-import useSWR, { Fetcher } from "swr";
+import useSWRImmutable, { Fetcher } from "swr";
 import { useQueryState } from "nuqs";
 import { Suspense } from "react";
 
@@ -23,11 +23,10 @@ export default function Home() {
 function Client() {
   const [search] = useQueryState("search", { defaultValue: "" });
 
-  const { data, error, isLoading } = useSWR("/api/models.json", fetcher, {
-    revalidate: 3600, // 1h
-    revalidateOnFocus: false,
-    revalidateOnReconnect: false,
-  });
+  const { data, error, isLoading } = useSWRImmutable(
+    "/api/models.json",
+    fetcher,
+  );
 
   if (isLoading) return <TableSkeleton rows={22} columns={13} />;
 
