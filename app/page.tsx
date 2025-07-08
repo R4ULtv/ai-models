@@ -1,6 +1,9 @@
 "use client";
 
 import useSWR, { Fetcher } from "swr";
+import { useQueryState } from "nuqs";
+import { Suspense } from "react";
+
 import { DataTable } from "@/components/data-table";
 import { columns } from "@/components/columns";
 import { Model } from "@/lib/schema";
@@ -10,6 +13,16 @@ const fetcher: Fetcher<Model[], string> = (url) =>
   fetch(url).then((res) => res.json());
 
 export default function Home() {
+  return (
+    <Suspense>
+      <Client />
+    </Suspense>
+  );
+}
+
+function Client() {
+  const [search] = useQueryState("search", { defaultValue: "" });
+
   const { data, error, isLoading } = useSWR("/api/models.json", fetcher, {
     revalidate: 3600, // 1h
     revalidateOnFocus: false,
@@ -21,5 +34,5 @@ export default function Home() {
   if (error) return <div>Error loading data</div>;
 
   if (data && data.length > 0)
-    return <DataTable columns={columns} data={data} />;
+    return <DataTable columns={columns} data={data} search={search} />;
 }

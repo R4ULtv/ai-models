@@ -8,6 +8,10 @@ import { Button } from "@/components/ui/button";
 import { DatabaseZapIcon } from "lucide-react";
 import { GitHub } from "@/components/icons";
 
+import { NuqsAdapter } from "nuqs/adapters/next/app";
+import SearchInput from "@/components/search-input";
+import { Suspense } from "react";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -33,39 +37,46 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="bg-sidebar m-2 p-2 rounded-xl space-y-2 min-h-[calc(100vh-1rem)]">
-          <header className="bg-sidebar flex items-center justify-between gap-3 px-2">
-            <div className="flex items-center gap-2">
-              <Link href="/" className="flex items-center gap-2">
-                <DatabaseZapIcon className="size-4" />
-                <h1 className="font-bold tracking-tight text-sm">AI DB</h1>
-              </Link>
-              <Separator
-                orientation="vertical"
-                className="!h-4 hidden md:block"
-              />
-              <p className="text-muted-foreground hidden md:block line-clamp-1 text-xs">
-                An open-source database of AI models
-              </p>
-            </div>
-            <Button
-              asChild
-              size="icon"
-              variant="ghost"
-              className="size-8"
-              aria-label="Change Theme"
-            >
-              <a
-                href="https://github.com/R4ULtv/ai-db"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GitHub />
-              </a>
-            </Button>
-          </header>
-          {children}
-        </div>
+        <NuqsAdapter>
+          <div className="bg-sidebar m-2 p-2 rounded-xl space-y-2 min-h-[calc(100vh-1rem)]">
+            <header className="bg-sidebar flex items-center justify-between gap-3 px-2">
+              <div className="flex items-center gap-2">
+                <Link href="/" className="flex items-center gap-2">
+                  <DatabaseZapIcon className="size-4" />
+                  <h1 className="font-bold tracking-tight text-sm">AI DB</h1>
+                </Link>
+                <Separator
+                  orientation="vertical"
+                  className="!h-4 hidden md:block"
+                />
+                <p className="text-muted-foreground hidden md:block line-clamp-1 text-xs">
+                  An open-source database of AI models
+                </p>
+              </div>
+              <div className="flex items-center gap-2">
+                <Suspense>
+                  <SearchInput />
+                </Suspense>
+                <Button
+                  asChild
+                  size="icon"
+                  variant="ghost"
+                  className="size-8"
+                  aria-label="Change Theme"
+                >
+                  <a
+                    href="https://github.com/R4ULtv/ai-db"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <GitHub />
+                  </a>
+                </Button>
+              </div>
+            </header>
+            {children}
+          </div>
+        </NuqsAdapter>
       </body>
     </html>
   );
