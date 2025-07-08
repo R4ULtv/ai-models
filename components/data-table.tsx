@@ -4,6 +4,7 @@ import {
   ColumnDef,
   flexRender,
   getCoreRowModel,
+  getFilteredRowModel,
   useReactTable,
 } from "@tanstack/react-table";
 
@@ -15,21 +16,27 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Model } from "@/lib/schema";
+import { FrownIcon } from "lucide-react";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
+  search: string;
 }
 
 export function DataTable<TData, TValue>({
   columns,
   data,
+  search,
 }: DataTableProps<TData, TValue>) {
   const table = useReactTable({
     data,
     columns,
     getCoreRowModel: getCoreRowModel(),
+    getFilteredRowModel: getFilteredRowModel(),
+    state: {
+      globalFilter: search,
+    },
   });
 
   return (
@@ -60,7 +67,6 @@ export function DataTable<TData, TValue>({
           table.getRowModel().rows.map((row) => (
             <TableRow
               key={row.id}
-              id={`${(row.original as Model).provider_id}-${(row.original as Model).id}`}
               data-state={row.getIsSelected() && "selected"}
             >
               {row.getVisibleCells().map((cell) => (
@@ -75,8 +81,10 @@ export function DataTable<TData, TValue>({
           ))
         ) : (
           <TableRow>
-            <TableCell colSpan={columns.length} className="h-24 text-center">
-              No results.
+            <TableCell colSpan={columns.length} className="h-24">
+              <div className="flex items-center justify-center gap-2 text-muted-foreground">
+                <FrownIcon /> No results. Try adjusting your filters.
+              </div>
             </TableCell>
           </TableRow>
         )}

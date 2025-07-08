@@ -18,6 +18,7 @@ export const columns: ColumnDef<Model>[] = [
         provider_id={row.original.provider_id}
       />
     ),
+    enableGlobalFilter: false,
   },
   {
     accessorKey: "provider_id",
@@ -36,6 +37,7 @@ export const columns: ColumnDef<Model>[] = [
             <CapabilityBadge key={capability} capability={capability} />
           ))
         : "-",
+    enableGlobalFilter: false,
   },
   {
     accessorKey: "modalities.input",
@@ -51,6 +53,7 @@ export const columns: ColumnDef<Model>[] = [
       row.original.modalities.input.map((modality) => (
         <ModalityBadge key={modality} modality={modality} />
       )),
+    enableGlobalFilter: false,
   },
   {
     accessorKey: "modalities.output",
@@ -66,6 +69,7 @@ export const columns: ColumnDef<Model>[] = [
       row.original.modalities.output.map((modality) => (
         <ModalityBadge key={modality} modality={modality} />
       )),
+    enableGlobalFilter: false,
   },
   {
     accessorKey: "cost.input",
@@ -81,6 +85,7 @@ export const columns: ColumnDef<Model>[] = [
       row.original.cost.input
         ? numeral(row.original.cost.input).format("$0.00")
         : "-",
+    enableGlobalFilter: false,
   },
   {
     accessorKey: "cost.output",
@@ -96,6 +101,7 @@ export const columns: ColumnDef<Model>[] = [
       row.original.cost.output
         ? numeral(row.original.cost.output).format("$0.00")
         : "-",
+    enableGlobalFilter: false,
   },
   {
     accessorKey: "cost.cache_read",
@@ -111,6 +117,7 @@ export const columns: ColumnDef<Model>[] = [
       row.original.cost.cache_read
         ? numeral(row.original.cost.cache_read).format("$0.00")
         : "-",
+    enableGlobalFilter: false,
   },
   {
     accessorKey: "cost.cache_write",
@@ -126,6 +133,7 @@ export const columns: ColumnDef<Model>[] = [
       row.original.cost.cache_write
         ? numeral(row.original.cost.cache_write).format("$0.00")
         : "-",
+    enableGlobalFilter: false,
   },
   {
     accessorKey: "limit.context",
@@ -136,6 +144,7 @@ export const columns: ColumnDef<Model>[] = [
       </>
     ),
     cell: ({ row }) => numeral(row.original.limit.context).format("0,0"),
+    enableGlobalFilter: false,
   },
   {
     accessorKey: "limit.output",
@@ -146,6 +155,7 @@ export const columns: ColumnDef<Model>[] = [
       </>
     ),
     cell: ({ row }) => numeral(row.original.limit.output).format("0,0"),
+    enableGlobalFilter: false,
   },
   {
     accessorKey: "knowledge",
@@ -158,5 +168,6 @@ export const columns: ColumnDef<Model>[] = [
       </>
     ),
     cell: ({ row }) => row.original.knowledge || "-",
+    enableGlobalFilter: false,
   },
 ];
