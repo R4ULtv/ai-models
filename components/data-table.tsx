@@ -1,4 +1,12 @@
-import numeral from "numeral";
+"use client";
+
+import {
+  ColumnDef,
+  flexRender,
+  getCoreRowModel,
+  useReactTable,
+} from "@tanstack/react-table";
+
 import {
   Table,
   TableBody,
@@ -7,181 +15,71 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Badge } from "@/components/ui/badge";
 import { Model } from "@/lib/schema";
 
-import {
-  BrainIcon,
-  EyeIcon,
-  FileTextIcon,
-  ImageIcon,
-  SquareFunctionIcon,
-  TypeIcon,
-  VideoIcon,
-  Volume2Icon,
-  WrenchIcon,
-} from "lucide-react";
-import ProviderLogo from "@/components/provider-logo";
+interface DataTableProps<TData, TValue> {
+  columns: ColumnDef<TData, TValue>[];
+  data: TData[];
+}
 
-export default function DataTable({ data }: { data: Model[] }) {
+export function DataTable<TData, TValue>({
+  columns,
+  data,
+}: DataTableProps<TData, TValue>) {
+  const table = useReactTable({
+    data,
+    columns,
+    getCoreRowModel: getCoreRowModel(),
+  });
+
   return (
     <Table className="table-auto">
       <TableHeader className="border-t">
-        <TableRow>
-          <TableHead></TableHead>
-          <TableHead className="text-xs text-muted-foreground font-semibold">
-            PROVIDER ID
-          </TableHead>
-          <TableHead className="text-xs text-muted-foreground font-semibold">
-            MODEL ID
-          </TableHead>
-          <TableHead className="text-xs text-muted-foreground font-semibold">
-            CAPABILITIES
-          </TableHead>
-          <TableHead className="text-xs text-muted-foreground font-semibold">
-            INPUT
-            <span className="hidden md:block text-ring text-[10px]">
-              MODALITIES
-            </span>
-          </TableHead>
-          <TableHead className="text-xs text-muted-foreground font-semibold">
-            OUTPUT
-            <span className="hidden md:block text-ring text-[10px]">
-              MODALITIES
-            </span>
-          </TableHead>
-          <TableHead className="text-xs text-muted-foreground font-semibold">
-            INPUT COST{" "}
-            <span className="hidden md:block text-ring text-[10px]">
-              PER 1M TOKENS
-            </span>
-          </TableHead>
-          <TableHead className="text-xs text-muted-foreground font-semibold">
-            OUTPUT COST{" "}
-            <span className="hidden md:block text-ring text-[10px]">
-              PER 1M TOKENS
-            </span>
-          </TableHead>
-          <TableHead className="text-xs text-muted-foreground font-semibold">
-            CACHE READ COST{" "}
-            <span className="hidden md:block text-ring text-[10px]">
-              PER 1M TOKENS
-            </span>
-          </TableHead>
-          <TableHead className="text-xs text-muted-foreground font-semibold">
-            CACHE WRITE COST{" "}
-            <span className="hidden md:block text-ring text-[10px]">
-              PER 1M TOKENS
-            </span>
-          </TableHead>
-          <TableHead className="text-xs text-muted-foreground font-semibold">
-            CONTEXT LIMIT{" "}
-            <span className="hidden md:block text-ring text-[10px]">
-              TOKENS
-            </span>
-          </TableHead>
-          <TableHead className="text-xs text-muted-foreground font-semibold">
-            OUTPUT LIMIT{" "}
-            <span className="hidden md:block text-ring text-[10px]">
-              TOKENS
-            </span>
-          </TableHead>
-          <TableHead className="text-xs text-muted-foreground font-semibold">
-            KNOWLEDGE
-            <span className="hidden md:block text-ring text-[10px]">
-              CUT OFF DATE
-            </span>
-          </TableHead>
-        </TableRow>
-      </TableHeader>
-      <TableBody>
-        {data.map((model) => (
-          <TableRow key={`${model.provider_id}-${model.id}`}>
-            <TableCell>
-              <ProviderLogo provider_id={model.provider_id} />
-            </TableCell>
-            <TableCell className="font-mono text-xs text-muted-foreground">
-              {model.provider_id}
-            </TableCell>
-            <TableCell className="font-mono text-xs text-muted-foreground">
-              {model.id}
-            </TableCell>
-            <TableCell className="font-mono text-xs text-muted-foreground space-x-1">
-              {model.capabilities.length > 0
-                ? model.capabilities.map((capability) => (
-                    <Badge
-                      key={capability}
-                      variant="outline"
-                      className="p-1 text-muted-foreground"
-                    >
-                      {capability === "tools" && <WrenchIcon />}
-                      {capability === "vision" && <EyeIcon />}
-                      {capability === "reasoning" && <BrainIcon />}
-                      {capability === "embedding" && <SquareFunctionIcon />}
-                    </Badge>
-                  ))
-                : "-"}
-            </TableCell>
-            <TableCell className="space-x-1">
-              {model.modalities?.input?.map((modality) => (
-                <Badge
-                  key={modality}
-                  variant="outline"
-                  className="p-1 text-muted-foreground"
+        {table.getHeaderGroups().map((headerGroup) => (
+          <TableRow key={headerGroup.id}>
+            {headerGroup.headers.map((header) => {
+              return (
+                <TableHead
+                  key={header.id}
+                  className="text-xs text-muted-foreground font-semibold"
                 >
-                  {modality === "text" && <TypeIcon />}
-                  {modality === "audio" && <Volume2Icon />}
-                  {modality === "image" && <ImageIcon />}
-                  {modality === "video" && <VideoIcon />}
-                  {modality === "pdf" && <FileTextIcon />}
-                </Badge>
-              ))}
-            </TableCell>
-            <TableCell className="space-x-1">
-              {model.modalities?.output?.map((modality) => (
-                <Badge
-                  key={modality}
-                  variant="outline"
-                  className="p-1 text-muted-foreground"
-                >
-                  {modality === "text" && <TypeIcon />}
-                  {modality === "audio" && <Volume2Icon />}
-                  {modality === "image" && <ImageIcon />}
-                  {modality === "pdf" && <FileTextIcon />}
-                </Badge>
-              ))}
-            </TableCell>
-            <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
-              {model.cost.input
-                ? numeral(model.cost.input).format("$0.00")
-                : "-"}
-            </TableCell>
-            <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
-              {model.cost.output
-                ? numeral(model.cost.output).format("$0.00")
-                : "-"}
-            </TableCell>
-            <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
-              {model.cost.cache_read
-                ? numeral(model.cost.cache_read).format("$0.00")
-                : "-"}
-            </TableCell>
-            <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
-              {model.cost.cache_write
-                ? numeral(model.cost.cache_write).format("$0.00")
-                : "-"}
-            </TableCell>
-            <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
-              {numeral(model.limit.context).format("0,0")}
-            </TableCell>
-            <TableCell className="font-mono text-xs text-muted-foreground tabular-nums">
-              {numeral(model.limit.output).format("0,0")}
-            </TableCell>
-            <TableCell className="font-mono text-xs text-muted-foreground">
-              {model.knowledge ? model.knowledge : "-"}
-            </TableCell>
+                  {header.isPlaceholder
+                    ? null
+                    : flexRender(
+                        header.column.columnDef.header,
+                        header.getContext(),
+                      )}
+                </TableHead>
+              );
+            })}
           </TableRow>
         ))}
+      </TableHeader>
+      <TableBody>
+        {table.getRowModel().rows?.length ? (
+          table.getRowModel().rows.map((row) => (
+            <TableRow
+              key={row.id}
+              id={`${(row.original as Model).provider_id}-${(row.original as Model).id}`}
+              data-state={row.getIsSelected() && "selected"}
+            >
+              {row.getVisibleCells().map((cell) => (
+                <TableCell
+                  key={cell.id}
+                  className="font-mono text-xs text-muted-foreground space-x-1"
+                >
+                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                </TableCell>
+              ))}
+            </TableRow>
+          ))
+        ) : (
+          <TableRow>
+            <TableCell colSpan={columns.length} className="h-24 text-center">
+              No results.
+            </TableCell>
+          </TableRow>
+        )}
       </TableBody>
     </Table>
   );

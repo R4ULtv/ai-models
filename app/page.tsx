@@ -1,8 +1,25 @@
-import { getModels } from "@/lib/models";
-import DataTable from "@/components/data-table";
+"use client";
+
+import useSWR, { Fetcher } from "swr";
+import { DataTable } from "@/components/data-table";
+import { columns } from "@/components/columns";
+import { Model } from "@/lib/schema";
+import { TableSkeleton } from "@/components/table-skeleton";
+
+const fetcher: Fetcher<Model[], string> = (url) =>
+  fetch(url).then((res) => res.json());
 
 export default function Home() {
-  const models = getModels();
+  const { data, error, isLoading } = useSWR("/api/models.json", fetcher, {
+    revalidate: 3600, // 1h
+    revalidateOnFocus: false,
+    revalidateOnReconnect: false,
+  });
 
-  return <DataTable data={models} />;
+  if (isLoading) return <TableSkeleton rows={22} columns={13} />;
+
+  if (error) return <div>Error loading data</div>;
+
+  if (data && data.length > 0)
+    return <DataTable columns={columns} data={data} />;
 }
