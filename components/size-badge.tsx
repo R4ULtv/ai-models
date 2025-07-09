@@ -1,3 +1,4 @@
+import { CpuIcon, GpuIcon, SmartphoneIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
@@ -21,6 +22,11 @@ export const SizeBadge = ({
         className,
       )}
     >
+      {(unit === "MB" || (unit === "GB" && sizeFloat < 4)) && (
+        <SmartphoneIcon />
+      )}
+      {unit === "GB" && sizeFloat >= 4 && sizeFloat < 40 && <CpuIcon />}
+      {unit === "GB" && sizeFloat >= 40 && <GpuIcon />}
       {size}
     </Badge>
   );

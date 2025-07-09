@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 
 import { DatabaseZapIcon } from "lucide-react";
-import { GitHub } from "@/components/icons";
+import { GitHub, Ollama } from "@/components/icons";
 
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import SearchInput from "@/components/search-input";
@@ -54,9 +54,15 @@ export default function RootLayout({
                 </p>
               </div>
               <div className="flex items-center gap-2">
-                <Suspense>
-                  <SearchInput />
-                </Suspense>
+                <Button asChild size="icon" variant="ghost" className="size-8">
+                  <Link href="/ollama">
+                    <Ollama />
+                  </Link>
+                </Button>
+                <Separator
+                  orientation="vertical"
+                  className="!h-4 hidden md:block"
+                />
                 <Button asChild size="icon" variant="ghost" className="size-8">
                   <a
                     href="https://github.com/R4ULtv/ai-db"
@@ -66,6 +72,9 @@ export default function RootLayout({
                     <GitHub />
                   </a>
                 </Button>
+                <Suspense>
+                  <SearchInput />
+                </Suspense>
               </div>
             </header>
             {children}
