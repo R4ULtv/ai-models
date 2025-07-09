@@ -28,11 +28,23 @@ function Client() {
     fetcher,
   );
 
-  if (isLoading) return <TableSkeleton rows={30} columns={13} />;
+  if (isLoading) return <TableSkeleton rows={30} columns={10} />;
 
   if (error) return <div>Error loading data</div>;
 
   if (data && data.length > 0) {
-    return <DataTable columns={columns} data={data} search={search} />;
+    return (
+      <DataTable
+        columns={columns}
+        data={data}
+        globalFilter={search}
+        columnVisibility={{
+          "cost.input": false,
+          "cost.output": false,
+          "cost.cache_read": false,
+          "cost.cache_write": false,
+        }}
+      />
+    );
   }
 }

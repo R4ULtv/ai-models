@@ -33,5 +33,12 @@ function Client() {
   if (error) return <div>Error loading data</div>;
 
   if (data && data.length > 0)
-    return <DataTable columns={columns} data={data} search={search} />;
+    return (
+      <DataTable
+        columns={columns}
+        data={data}
+        globalFilter={search}
+        columnVisibility={{ size: false }}
+      />
+    );
 }

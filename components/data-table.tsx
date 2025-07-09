@@ -21,13 +21,15 @@ import { FrownIcon } from "lucide-react";
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
-  search: string;
+  globalFilter: string;
+  columnVisibility?: Record<string, boolean>;
 }
 
 export function DataTable<TData, TValue>({
   columns,
   data,
-  search,
+  globalFilter,
+  columnVisibility,
 }: DataTableProps<TData, TValue>) {
   const table = useReactTable({
     data,
@@ -35,7 +37,10 @@ export function DataTable<TData, TValue>({
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     state: {
-      globalFilter: search,
+      globalFilter,
+    },
+    initialState: {
+      columnVisibility,
     },
   });
 
