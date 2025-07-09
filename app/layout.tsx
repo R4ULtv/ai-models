@@ -55,7 +55,7 @@ export default function RootLayout({
               </div>
               <div className="flex items-center gap-2">
                 <Button asChild size="icon" variant="ghost" className="size-8">
-                  <Link href="/ollama">
+                  <Link href="/ollama" aria-label="Ollama Models">
                     <Ollama />
                   </Link>
                 </Button>
@@ -66,6 +66,7 @@ export default function RootLayout({
                 <Button asChild size="icon" variant="ghost" className="size-8">
                   <a
                     href="https://github.com/R4ULtv/ai-db"
+                    aria-label="Github Repo"
                     target="_blank"
                     rel="noreferrer"
                   >
