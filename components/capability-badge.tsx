@@ -17,7 +17,6 @@ export const CapabilityBadge = ({
 }) => {
   return (
     <Badge
-      key={capability}
       variant="outline"
       className={cn("p-1 text-muted-foreground", className)}
     >

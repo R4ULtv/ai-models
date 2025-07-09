@@ -18,7 +18,6 @@ export const ModalityBadge = ({
 }) => {
   return (
     <Badge
-      key={modality}
       variant="outline"
       className={cn("p-1 text-muted-foreground", className)}
     >
