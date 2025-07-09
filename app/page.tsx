@@ -14,7 +14,7 @@ const fetcher: Fetcher<Model[], string> = (url) =>
 
 export default function Home() {
   return (
-    <Suspense>
+    <Suspense fallback={<TableSkeleton rows={22} columns={13} />}>
       <Client />
     </Suspense>
   );
@@ -23,16 +23,13 @@ export default function Home() {
 function Client() {
   const [search] = useQueryState("search", { defaultValue: "" });
 
-  const { data, error, isLoading } = useSWRImmutable(
-    "/api/models.json",
-    fetcher,
-  );
-
-  if (isLoading) return <TableSkeleton rows={22} columns={13} />;
+  const { data, error } = useSWRImmutable("/api/models.json", fetcher, {
+    suspense: true,
+  });
 
   if (error) return <div>Error loading data</div>;
 
-  if (data && data.length > 0)
+  if (data.length > 0)
     return (
       <DataTable
         columns={columns}

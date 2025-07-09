@@ -72,7 +72,7 @@ export default function RootLayout({
                     <GitHub />
                   </a>
                 </Button>
-                <Suspense>
+                <Suspense fallback={<div className="w-[241px] h-8" />}>
                   <SearchInput />
                 </Suspense>
               </div>
