@@ -57,13 +57,7 @@ export default function RootLayout({
                 <Suspense>
                   <SearchInput />
                 </Suspense>
-                <Button
-                  asChild
-                  size="icon"
-                  variant="ghost"
-                  className="size-8"
-                  aria-label="Change Theme"
-                >
+                <Button asChild size="icon" variant="ghost" className="size-8">
                   <a
                     href="https://github.com/R4ULtv/ai-db"
                     target="_blank"
