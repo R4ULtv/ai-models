@@ -26,6 +26,7 @@ export const modelSchema = z.object({
     context: z.number(),
     output: z.number(),
   }),
+  size: z.array(z.string()).optional(),
 });
 
 export type Model = z.infer<typeof modelSchema>;
