@@ -14,6 +14,7 @@ import {
   AmazonWebServices,
   OpenRouter,
   GoogleCloud,
+  Ollama,
 } from "@/components/icons";
 
 const providerLogoMap: Record<string, React.FC> = {
@@ -31,6 +32,7 @@ const providerLogoMap: Record<string, React.FC> = {
   "amazon-bedrock": AmazonWebServices,
   openrouter: OpenRouter,
   "google-vertex": GoogleCloud,
+  ollama: Ollama,
 };
 
 export function ProviderLogo({
