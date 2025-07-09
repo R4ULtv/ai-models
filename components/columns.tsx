@@ -6,10 +6,12 @@ import numeral from "numeral";
 
 import ProviderLogo from "@/components/provider-logo";
 import { CapabilityBadge } from "@/components/capability-badge";
-import { ModalityBadge } from "./modality-badge";
+import { ModalityBadge } from "@/components/modality-badge";
+import { SizeBadge } from "@/components/size-badge";
 
 export const columns: ColumnDef<Model>[] = [
   {
+    id: "icon",
     accessorKey: "icon",
     header: "",
     cell: ({ row }) => (
@@ -21,14 +23,27 @@ export const columns: ColumnDef<Model>[] = [
     enableGlobalFilter: false,
   },
   {
+    id: "provider_id",
     accessorKey: "provider_id",
     header: "PROVIDER ID",
   },
   {
+    id: "id",
     accessorKey: "id",
     header: "MODEL ID",
   },
   {
+    id: "size",
+    accessorKey: "size",
+    header: "SIZE",
+    cell: ({ row }) =>
+      row.original.size && row.original.size.length > 0
+        ? row.original.size.map((size) => <SizeBadge key={size} size={size} />)
+        : "-",
+    enableGlobalFilter: false,
+  },
+  {
+    id: "capabilities",
     accessorKey: "capabilities",
     header: "CAPABILITIES",
     cell: ({ row }) =>
@@ -40,6 +55,7 @@ export const columns: ColumnDef<Model>[] = [
     enableGlobalFilter: false,
   },
   {
+    id: "modalities.input",
     accessorKey: "modalities.input",
     header: () => (
       <>
@@ -56,6 +72,7 @@ export const columns: ColumnDef<Model>[] = [
     enableGlobalFilter: false,
   },
   {
+    id: "modalities.output",
     accessorKey: "modalities.output",
     header: () => (
       <>
@@ -72,6 +89,7 @@ export const columns: ColumnDef<Model>[] = [
     enableGlobalFilter: false,
   },
   {
+    id: "cost.input",
     accessorKey: "cost.input",
     header: () => (
       <>
@@ -88,6 +106,7 @@ export const columns: ColumnDef<Model>[] = [
     enableGlobalFilter: false,
   },
   {
+    id: "cost.output",
     accessorKey: "cost.output",
     header: () => (
       <>
@@ -104,6 +123,7 @@ export const columns: ColumnDef<Model>[] = [
     enableGlobalFilter: false,
   },
   {
+    id: "cost.cache_read",
     accessorKey: "cost.cache_read",
     header: () => (
       <>
@@ -120,6 +140,7 @@ export const columns: ColumnDef<Model>[] = [
     enableGlobalFilter: false,
   },
   {
+    id: "cost.cache_write",
     accessorKey: "cost.cache_write",
     header: () => (
       <>
@@ -136,6 +157,7 @@ export const columns: ColumnDef<Model>[] = [
     enableGlobalFilter: false,
   },
   {
+    id: "limit.context",
     accessorKey: "limit.context",
     header: () => (
       <>
@@ -147,6 +169,7 @@ export const columns: ColumnDef<Model>[] = [
     enableGlobalFilter: false,
   },
   {
+    id: "limit.output",
     accessorKey: "limit.output",
     header: () => (
       <>
@@ -158,6 +181,7 @@ export const columns: ColumnDef<Model>[] = [
     enableGlobalFilter: false,
   },
   {
+    id: "knowledge",
     accessorKey: "knowledge",
     header: () => (
       <>
