@@ -1,72 +1,75 @@
-![AI-DB](./public/og-image.png)
+![ai-models](./public/og-image.png)
 
-An open-source database of AI models with a modern web interface to explore and compare different AI models from various providers.
+**AI Models** is an open-source, community-driven database and web interface for exploring and comparing AI models from all major providers. Discover capabilities, compare costs, and find the right model for your needs—all in a modern, intuitive UI.
 
-## Features
+## 🚀 Features
 
-- **Comprehensive Model Database**: Curated collection of AI models from major providers
-- **Rich Metadata**: Detailed information about capabilities, costs, limits, and modalities
-- **Interactive Data Table**: Sortable and filterable interface to explore models
-- **Modern UI**: Built with Next.js 15, Tailwind CSS, and Radix UI components
-- **Type Safety**: Full TypeScript support with Zod schema validation
-- **Dark Mode**: Elegant dark theme for better viewing experience
+- **Comprehensive Model Database:** Curated collection of AI models from leading providers
+- **Rich Metadata:** Capabilities, costs, context limits, modalities, and more
+- **Interactive Data Table:** Sort, filter, and search models with ease
+- **Modern UI:** Built with [Next.js 15](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and [Radix UI](https://www.radix-ui.com/)
+- **Type Safety:** End-to-end TypeScript with [Zod](https://zod.dev/) schema validation
+- **Dark Mode:** Elegant dark theme for comfortable viewing
+- **Open Contribution:** Easily add or update models via simple JSON files
 
-## Supported Providers
+## 🌐 Supported Providers
 
-- **OpenAI** - GPT models and more
-- **Anthropic** - Claude models
-- **Google** - Gemini models
-- **Mistral** - Mistral AI models
-- **DeepSeek** - DeepSeek models
-- **Vercel** - AI models
-- **xAI** - Grok models
+- **OpenAI** – GPT models and more
+- **Anthropic** – Claude models
+- **xAI** (Grok) – Grok models
+- **DeepSeek** – DeepSeek models
+- **Mistral AI** – Mistral models
+- **Google** – Gemini and Vertex models
+- **Vercel** – Vercel AI models
+- **Groq** – Groq models
+- **Microsoft Azure** – Azure OpenAI and more
+- **Meta** (Llama) – Llama models
+- **GitHub Copilot** – Copilot models
+- **Amazon Bedrock** – Bedrock models
+- **OpenRouter** – Aggregated provider
+- **Google Vertex** – Vertex AI models
+- **Ollama** – Local model serving
 
-## Model Information
+## 📦 Model Information
 
-Each model includes comprehensive metadata:
+Each model entry includes:
 
-- **Basic Info**: Name, provider, unique identifiers
-- **Capabilities**: Tools, vision, reasoning, embedding support
-- **Modalities**: Input/output support for text, audio, image, video, PDF
-- **Pricing**: Input/output costs per million tokens, cache pricing
-- **Limits**: Context window and output token limits
-- **Features**: Temperature support, attachment handling, knowledge cutoff, model size
+- **Basic Info:** Name, provider, unique identifiers
+- **Capabilities:** Tools, vision, reasoning, embedding support
+- **Modalities:** Input/output for text, audio, image, video, PDF
+- **Pricing:** Input/output costs per million tokens, cache pricing
+- **Limits:** Context window and output token limits
+- **Features:** Temperature, attachment support, knowledge cutoff, model size
 
-## Getting Started
-
-Models are served directly from a Cloudflare Worker. You can find the worker's source code [here](https://github.com/R4ULtv/ai-db/tree/main/.cloudflare/apis/src).
+## 🛠️ Getting Started
 
 ### Prerequisites
 
-- Node.js 20+
-- pnpm (recommended) or npm
+- [Node.js 20+](https://nodejs.org/)
+- [pnpm](https://pnpm.io/) (recommended) or npm
 
 ### Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/R4ULtv/ai-db.git
-cd ai-db
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/R4ULtv/ai-models.git
+   cd ai-models
+   ```
+2. **Install dependencies:**
+   ```bash
+   pnpm install
+   ```
+3. **Run the development server:**
+   ```bash
+   pnpm dev
+   ```
+4. **Open** [http://localhost:3000](http://localhost:3000) in your browser. Models are fetched from the Cloudflare Worker.
 
-2. Install dependencies:
-```bash
-pnpm install
-```
+## ➕ Adding New Models
 
-3. Run the development server:
-```bash
-pnpm dev
-```
+To add a new model, create a JSON file in the appropriate provider directory under [`public/`](.cloudflare/apis/public). The file must follow the schema in [`lib/schema.ts`](lib/schema.ts).
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser. The models will be fetched from the Cloudflare Worker.
-
-## Adding New Models
-
-To add a new model to the database, create a JSON file in the appropriate provider directory under [`public/`](.cloudflare/apis/public).
-The file must follow the schema structure defined in `lib/schema.ts`.
-
-You can find the complete, up-to-date JSON schema definition for models at the `/api/schema.json` endpoint of the running application.
+- The full, up-to-date JSON schema is available at `/api/schema.json` when the app is running.
 
 ### Example `model.json`
 
@@ -76,83 +79,49 @@ You can find the complete, up-to-date JSON schema definition for models at the `
   "name": "GPT-4o",
   "provider": "OpenAI",
   "provider_id": "openai",
-  "capabilities": [
-    "tools",
-    "vision",
-    "reasoning"
-  ],
+  "capabilities": ["tools", "vision", "reasoning"],
   "attachment": true,
   "temperature": true,
   "knowledge": "2023-10",
   "modalities": {
-    "input": [
-      "text",
-      "image",
-      "audio"
-    ],
-    "output": [
-      "text"
-    ]
+    "input": ["text", "image", "audio"],
+    "output": ["text"]
   },
-  "cost": {
-    "input": 5.0,
-    "output": 15.0
-  },
-  "limit": {
-    "context": 128000,
-    "output": 4096
-  }
+  "cost": { "input": 5.0, "output": 15.0 },
+  "limit": { "context": 128000, "output": 4096 }
 }
 ```
 
-### Schema Fields
+See the schema for all available fields and valid values.
 
-- `id`: `string` - Unique identifier for the model (e.g., "gpt-4o").
-- `name`: `string` - Display name of the model (e.g., "GPT-4o").
-- `provider`: `string` - Human-readable provider name (e.g., "OpenAI").
-- `provider_id`: `string` - Provider identifier slug (e.g., "openai").
-- `capabilities`: `array` - Supported capabilities. Valid values: `"tools"`, `"vision"`, `"reasoning"`, `"embedding"`.
-- `attachment`: `boolean` - Whether the model supports file attachments.
-- `temperature`: `boolean` - Whether the model supports the temperature parameter.
-- `knowledge`: `string` (optional) - Knowledge cutoff date (e.g., "2023-10").
-- `modalities`: `object` - Contains supported input and output types. Valid values: `"text"`, `"audio"`, `"image"`, `"video"`, `"pdf"`.
-    - `input`: `array` - Supported input types.
-    - `output`: `array` - Supported output types.
-- `cost`: `object` - Pricing information per million tokens. All fields are optional.
-    - `input`: `number` - Cost for input tokens.
-    - `output`: `number` - Cost for output tokens.
-    - `cache_read`: `number` - Cost for reading from cache.
-    - `cache_write`: `number` - Cost for writing to cache.
-- `limit`: `object` - Token limits.
-    - `context`: `number` - Context window size.
-    - `output`: `number` - Maximum output tokens.
-    - `size`: `array` (optional) - Model size in billion params (e.g., `["7", "8"]`).
+## 🤝 Contributing
 
-## Contributing
+Contributions are welcome! To get started:
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+1. **Fork the repo** and create your branch
+2. **Follow code style and conventions** (TypeScript, formatting, etc.)
+3. **Add or update TypeScript types** as needed
+4. **Update documentation** if your change affects usage
+5. **Test your changes** thoroughly
+6. **Submit a Pull Request**
 
-### Guidelines
+For major changes, please [open an issue](https://github.com/R4ULtv/ai-models/issues) first to discuss your ideas.
 
-1. Follow the existing code style and conventions
-2. Add appropriate TypeScript types
-3. Update documentation as needed
-4. Test your changes thoroughly
-5. Follow the model schema when adding new models
+## 📄 License
 
-## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - Built with [Next.js](https://nextjs.org/)
 - UI components from [Radix UI](https://www.radix-ui.com/)
 - Icons from [Lucide](https://lucide.dev/)
 - Styling with [Tailwind CSS](https://tailwindcss.com/)
+- Serverless infrastructure by [Cloudflare](https://cloudflare.com/)
+- API framework powered by [Hono](https://hono.dev/)
 
-## Support
+## ⭐ Support
 
-If you find this project helpful, please consider giving it a star ⭐ on GitHub!
+If you find this project helpful, please consider giving it a star ⭐ on [GitHub](https://github.com/R4ULtv/ai-models)!
 
-For questions or support, please open an issue on the GitHub repository.
+For questions or support, [open an issue](https://github.com/R4ULtv/ai-models/issues) on the repository.
