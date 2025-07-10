@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 
-import { DatabaseZapIcon } from "lucide-react";
+import { BrainIcon } from "lucide-react";
 import { GitHub, Ollama } from "@/components/icons";
 
 import { NuqsAdapter } from "nuqs/adapters/next/app";
@@ -59,7 +59,7 @@ export default function RootLayout({
             <header className="bg-sidebar flex items-center justify-between gap-3 px-2">
               <div className="flex items-center gap-2">
                 <Link href="/" className="flex items-center gap-2">
-                  <DatabaseZapIcon className="size-4" />
+                  <BrainIcon className="size-4" />
                   <h1 className="font-bold text-sm">AI MODELS</h1>
                 </Link>
                 <Separator
@@ -93,7 +93,7 @@ export default function RootLayout({
                     className="size-8"
                   >
                     <a
-                      href="https://github.com/R4ULtv/ai-db"
+                      href="https://github.com/R4ULtv/ai-models"
                       aria-label="Github Repo"
                       target="_blank"
                       rel="noreferrer"
