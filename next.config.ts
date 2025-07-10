@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/api/:slug*",
-        destination: "https://ai-db.r-carini2003.workers.dev/:slug*",
+        destination: "https://ai-models.r-carini2003.workers.dev/:slug*",
       },
     ];
   },
