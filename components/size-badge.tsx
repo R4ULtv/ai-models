@@ -11,9 +11,9 @@ export const SizeBadge = ({
       variant="outline"
       className={cn(
         "p-1 text-[10px] text-muted-foreground",
-        size < 4 && "bg-emerald-400/10",
-        size >= 4 && size < 40 && "bg-amber-400/10",
-        size >= 40 && "bg-rose-400/10",
+        size < 4 && "bg-green-400/10",
+        size >= 4 && size < 40 && "bg-yellow-400/10",
+        size >= 40 && "bg-red-400/10",
         className,
       )}
     >
