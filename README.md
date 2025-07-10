@@ -34,6 +34,8 @@ Each model includes comprehensive metadata:
 
 ## Getting Started
 
+Models are served directly from a Cloudflare Worker. You can find the worker's source code [here](https://github.com/R4ULtv/ai-db/tree/main/.cloudflare/apis/src).
+
 ### Prerequisites
 
 - Node.js 20+
@@ -57,36 +59,51 @@ pnpm install
 pnpm dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+4. Open [http://localhost:3000](http://localhost:3000) in your browser. The models will be fetched from the Cloudflare Worker.
 
 ## Adding New Models
 
 To add a new model to the database:
 
-1. Create a JSON file in the appropriate provider directory under `models/`
+1. Create a JSON file in the appropriate provider directory under [`public/`](.cloudflare/apis/public).
 2. Follow the schema structure defined in `lib/schema.ts`:
 
 ```json
 {
-  "id": "model-id",
-  "name": "Model Name",
-  "provider": "Provider Name",
-  "provider_id": "provider_slug",
-  "capabilities": ["tools", "vision"],
+  "id": "gemini-2.5-pro",
+  "name": "Gemini 2.5 Pro",
+  "provider": "Google",
+  "provider_id": "google",
+  "capabilities": [
+    "tools",
+    "reasoning",
+    "vision"
+  ],
   "attachment": true,
   "temperature": true,
-  "knowledge": "2024-01",
-  "input_modalities": ["text", "image"],
-  "output_modalities": ["text"],
+  "knowledge": "2025-01",
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "audio",
+      "video",
+      "pdf"
+    ],
+    "output": [
+      "text"
+    ]
+  },
   "cost": {
-    "input": 2.5,
+    "input": 1.25,
     "output": 10,
-    "cache_read": 1.25
+    "cache_read": 0.31
   },
   "limit": {
-    "context": 128000,
-    "output": 4096
+    "context": 1048576,
+    "output": 65536
   }
+}}
 }
 ```
 
