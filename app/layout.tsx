@@ -54,25 +54,37 @@ export default function RootLayout({
                 </p>
               </div>
               <div className="flex items-center gap-2">
-                <Button asChild size="icon" variant="ghost" className="size-8">
-                  <Link href="/ollama" aria-label="Ollama Models">
-                    <Ollama />
-                  </Link>
-                </Button>
-                <Separator
-                  orientation="vertical"
-                  className="!h-4 hidden md:block"
-                />
-                <Button asChild size="icon" variant="ghost" className="size-8">
-                  <a
-                    href="https://github.com/R4ULtv/ai-db"
-                    aria-label="Github Repo"
-                    target="_blank"
-                    rel="noreferrer"
+                <div className="flex items-center gap-1">
+                  <Button
+                    asChild
+                    size="icon"
+                    variant="ghost"
+                    className="size-8"
                   >
-                    <GitHub />
-                  </a>
-                </Button>
+                    <Link href="/ollama" aria-label="Ollama Models">
+                      <Ollama />
+                    </Link>
+                  </Button>
+                  <Separator
+                    orientation="vertical"
+                    className="!h-4 hidden md:block"
+                  />
+                  <Button
+                    asChild
+                    size="icon"
+                    variant="ghost"
+                    className="size-8"
+                  >
+                    <a
+                      href="https://github.com/R4ULtv/ai-db"
+                      aria-label="Github Repo"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <GitHub />
+                    </a>
+                  </Button>
+                </div>
                 <Suspense fallback={<div className="w-[241px] h-8" />}>
                   <SearchInput />
                 </Suspense>
