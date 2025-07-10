@@ -103,7 +103,6 @@ To add a new model to the database:
     "context": 1048576,
     "output": 65536
   }
-}}
 }
 ```
 
