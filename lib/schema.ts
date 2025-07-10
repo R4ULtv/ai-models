@@ -26,7 +26,7 @@ export const modelSchema = z.object({
     context: z.number(),
     output: z.number(),
   }),
-  size: z.array(z.string()).optional(),
+  size: z.array(z.number()).optional(), // Size in Billions parameters
 });
 
 export type Model = z.infer<typeof modelSchema>;
