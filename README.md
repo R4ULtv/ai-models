@@ -30,7 +30,7 @@ Each model includes comprehensive metadata:
 - **Modalities**: Input/output support for text, audio, image, video, PDF
 - **Pricing**: Input/output costs per million tokens, cache pricing
 - **Limits**: Context window and output token limits
-- **Features**: Temperature support, attachment handling, knowledge cutoff
+- **Features**: Temperature support, attachment handling, knowledge cutoff, model size
 
 ## Getting Started
 
@@ -63,63 +63,70 @@ pnpm dev
 
 ## Adding New Models
 
-To add a new model to the database:
+To add a new model to the database, create a JSON file in the appropriate provider directory under [`public/`](.cloudflare/apis/public).
+The file must follow the schema structure defined in `lib/schema.ts`.
 
-1. Create a JSON file in the appropriate provider directory under [`public/`](.cloudflare/apis/public).
-2. Follow the schema structure defined in `lib/schema.ts`:
+You can find the complete, up-to-date JSON schema definition for models at the `/api/schema.json` endpoint of the running application.
+
+### Example `model.json`
 
 ```json
 {
-  "id": "gemini-2.5-pro",
-  "name": "Gemini 2.5 Pro",
-  "provider": "Google",
-  "provider_id": "google",
+  "id": "gpt-4o",
+  "name": "GPT-4o",
+  "provider": "OpenAI",
+  "provider_id": "openai",
   "capabilities": [
     "tools",
-    "reasoning",
-    "vision"
+    "vision",
+    "reasoning"
   ],
   "attachment": true,
   "temperature": true,
-  "knowledge": "2025-01",
+  "knowledge": "2023-10",
   "modalities": {
     "input": [
       "text",
       "image",
-      "audio",
-      "video",
-      "pdf"
+      "audio"
     ],
     "output": [
       "text"
     ]
   },
   "cost": {
-    "input": 1.25,
-    "output": 10,
-    "cache_read": 0.31
+    "input": 5.0,
+    "output": 15.0
   },
   "limit": {
-    "context": 1048576,
-    "output": 65536
+    "context": 128000,
+    "output": 4096
   }
 }
 ```
 
 ### Schema Fields
 
-- `id`: Unique identifier for the model
-- `name`: Display name of the model
-- `provider`: Human-readable provider name
-- `provider_id`: Provider identifier slug
-- `capabilities`: Array of supported capabilities
-- `attachment`: Whether the model supports file attachments
-- `temperature`: Whether the model supports temperature parameter
-- `knowledge`: Knowledge cutoff date (optional)
-- `input_modalities`: Supported input types (optional)
-- `output_modalities`: Supported output types (optional)
-- `cost`: Pricing information (per million tokens)
-- `limit`: Context and output token limits
+- `id`: `string` - Unique identifier for the model (e.g., "gpt-4o").
+- `name`: `string` - Display name of the model (e.g., "GPT-4o").
+- `provider`: `string` - Human-readable provider name (e.g., "OpenAI").
+- `provider_id`: `string` - Provider identifier slug (e.g., "openai").
+- `capabilities`: `array` - Supported capabilities. Valid values: `"tools"`, `"vision"`, `"reasoning"`, `"embedding"`.
+- `attachment`: `boolean` - Whether the model supports file attachments.
+- `temperature`: `boolean` - Whether the model supports the temperature parameter.
+- `knowledge`: `string` (optional) - Knowledge cutoff date (e.g., "2023-10").
+- `modalities`: `object` - Contains supported input and output types. Valid values: `"text"`, `"audio"`, `"image"`, `"video"`, `"pdf"`.
+    - `input`: `array` - Supported input types.
+    - `output`: `array` - Supported output types.
+- `cost`: `object` - Pricing information per million tokens. All fields are optional.
+    - `input`: `number` - Cost for input tokens.
+    - `output`: `number` - Cost for output tokens.
+    - `cache_read`: `number` - Cost for reading from cache.
+    - `cache_write`: `number` - Cost for writing to cache.
+- `limit`: `object` - Token limits.
+    - `context`: `number` - Context window size.
+    - `output`: `number` - Maximum output tokens.
+    - `size`: `array` (optional) - Model size in billion params (e.g., `["7", "8"]`).
 
 ## Contributing
 
