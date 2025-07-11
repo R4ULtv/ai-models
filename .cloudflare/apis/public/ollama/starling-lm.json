@@ -1,0 +1,18 @@
+{
+  "id": "starling-lm",
+  "name": "starling-lm",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 8192,
+    "output": 0
+  },
+  "size": [7.0]
+}

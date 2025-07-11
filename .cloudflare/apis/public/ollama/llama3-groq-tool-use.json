@@ -1,0 +1,18 @@
+{
+  "id": "llama3-groq-tool-use",
+  "name": "llama3-groq-tool-use",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["tools"],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 8192,
+    "output": 0
+  },
+  "size": [8.0, 70.0]
+}

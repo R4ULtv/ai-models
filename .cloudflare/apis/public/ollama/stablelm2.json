@@ -1,0 +1,18 @@
+{
+  "id": "stablelm2",
+  "name": "stablelm2",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 4096,
+    "output": 0
+  },
+  "size": [1.6, 12.0]
+}

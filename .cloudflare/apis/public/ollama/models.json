@@ -1,0 +1,3152 @@
+[
+  {
+    "id": "alfred",
+    "name": "alfred",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 2048,
+      "output": 0
+    },
+    "size": [40.0]
+  },
+  {
+    "id": "all-minilm",
+    "name": "all-minilm",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["embedding"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 512,
+      "output": 0
+    },
+    "size": [0.022, 0.033]
+  },
+  {
+    "id": "athene-v2",
+    "name": "athene-v2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [72.0]
+  },
+  {
+    "id": "aya",
+    "name": "references",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [8.0, 35.0]
+  },
+  {
+    "id": "aya-expanse",
+    "name": "aya-expanse",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [8.0, 32.0]
+  },
+  {
+    "id": "bakllava",
+    "name": "bakllava",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["image", "pdf", "text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "bespoke-minicheck",
+    "name": "bespoke-minicheck",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "bge-large",
+    "name": "bge-large",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["embedding"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 512,
+      "output": 0
+    },
+    "size": [0.335]
+  },
+  {
+    "id": "bge-m3",
+    "name": "bge-m3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["embedding"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [0.567]
+  },
+  {
+    "id": "codebooga",
+    "name": "codebooga",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [34.0]
+  },
+  {
+    "id": "codegeex4",
+    "name": "references",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [9.0]
+  },
+  {
+    "id": "codegemma",
+    "name": "codegemma",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [2.0, 7.0]
+  },
+  {
+    "id": "codellama",
+    "name": "codellama",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [7.0, 13.0, 34.0, 70.0]
+  },
+  {
+    "id": "codeqwen",
+    "name": "codeqwen",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 65536,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "codestral",
+    "name": "codestral",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [22.0]
+  },
+  {
+    "id": "codeup",
+    "name": "codeup",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [13.0]
+  },
+  {
+    "id": "cogito",
+    "name": "cogito",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [3.0, 8.0, 14.0, 32.0, 70.0]
+  },
+  {
+    "id": "command-a",
+    "name": "command-a",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [111.0]
+  },
+  {
+    "id": "command-r",
+    "name": "command-r",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [35.0]
+  },
+  {
+    "id": "command-r-plus",
+    "name": "command-r-plus",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [104.0]
+  },
+  {
+    "id": "command-r7b",
+    "name": "command-r7b",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["embedding", "reasoning", "tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "command-r7b-arabic",
+    "name": "command-r7b-arabic",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "dbrx",
+    "name": "dbrx",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [132.0]
+  },
+  {
+    "id": "deepcoder",
+    "name": "deepcoder",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [1.5, 14.0]
+  },
+  {
+    "id": "deepscaler",
+    "name": "deepscaler",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [1.5]
+  },
+  {
+    "id": "deepseek-coder",
+    "name": "deepseek-coder",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [1.3, 6.7, 33.0]
+  },
+  {
+    "id": "deepseek-coder-v2",
+    "name": "deepseek-coder-v2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 163840,
+      "output": 0
+    },
+    "size": [16.0, 236.0]
+  },
+  {
+    "id": "deepseek-llm",
+    "name": "deepseek-llm",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [7.0, 67.0]
+  },
+  {
+    "id": "deepseek-r1",
+    "name": "deepseek-r1",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 163840,
+      "output": 0
+    },
+    "size": [1.5, 7.0, 8.0, 14.0, 32.0, 70.0, 671.0]
+  },
+  {
+    "id": "deepseek-v2",
+    "name": "deepseek-v2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [16.0, 236.0]
+  },
+  {
+    "id": "deepseek-v2.5",
+    "name": "deepseek-v2.5",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [236.0]
+  },
+  {
+    "id": "deepseek-v3",
+    "name": "deepseek-v3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [671.0]
+  },
+  {
+    "id": "devstral",
+    "name": "devstral",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["vision"],
+    "attachment": true,
+    "temperature": false,
+    "modalities": {
+      "input": ["image", "text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [24.0]
+  },
+  {
+    "id": "dolphin-llama3",
+    "name": "🐬 dolphin 2.9 llama 3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [8.0, 70.0]
+  },
+  {
+    "id": "dolphin-mistral",
+    "name": "dolphin-mistral",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "dolphin-mixtral",
+    "name": "dolphin-mixtral",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 65536,
+      "output": 0
+    },
+    "size": []
+  },
+  {
+    "id": "dolphin-phi",
+    "name": "dolphin-phi",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 2048,
+      "output": 0
+    },
+    "size": [2.7]
+  },
+  {
+    "id": "dolphin3",
+    "name": "dolphin3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [8.0]
+  },
+  {
+    "id": "dolphincoder",
+    "name": "dolphincoder",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [7.0, 15.0]
+  },
+  {
+    "id": "duckdb-nsql",
+    "name": "duckdb-nsql",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "everythinglm",
+    "name": "everythinglm",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [13.0]
+  },
+  {
+    "id": "exaone-deep",
+    "name": "exaone-deep",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [2.4, 7.8, 32.0]
+  },
+  {
+    "id": "exaone3.5",
+    "name": "exaone3.5",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [2.4, 7.8, 32.0]
+  },
+  {
+    "id": "falcon",
+    "name": "falcon",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 2048,
+      "output": 0
+    },
+    "size": [7.0, 40.0, 180.0]
+  },
+  {
+    "id": "falcon2",
+    "name": "falcon2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 2048,
+      "output": 0
+    },
+    "size": [11.0]
+  },
+  {
+    "id": "falcon3",
+    "name": "key features",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [1.0, 3.0, 7.0, 10.0]
+  },
+  {
+    "id": "firefunction-v2",
+    "name": "firefunction-v2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [70.0]
+  },
+  {
+    "id": "gemma",
+    "name": "reference",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [2.0, 7.0]
+  },
+  {
+    "id": "gemma2",
+    "name": "gemma2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [2.0, 9.0, 27.0]
+  },
+  {
+    "id": "gemma3",
+    "name": "gemma3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning", "vision"],
+    "attachment": true,
+    "temperature": false,
+    "modalities": {
+      "input": ["image", "text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [1.0, 4.0, 12.0, 27.0]
+  },
+  {
+    "id": "gemma3n",
+    "name": "gemma3n",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["audio", "image", "text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": []
+  },
+  {
+    "id": "glm4",
+    "name": "glm4",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [9.0]
+  },
+  {
+    "id": "goliath",
+    "name": "goliath",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": []
+  },
+  {
+    "id": "granite-code",
+    "name": "granite-code",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 128000,
+      "output": 0
+    },
+    "size": [3.0, 8.0, 20.0, 34.0]
+  },
+  {
+    "id": "granite-embedding",
+    "name": "granite-embedding",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["embedding"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 512,
+      "output": 0
+    },
+    "size": [0.03, 0.278]
+  },
+  {
+    "id": "granite3-dense",
+    "name": "granite3-dense",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [2.0, 8.0]
+  },
+  {
+    "id": "granite3-guardian",
+    "name": "granite3-guardian",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [2.0, 8.0]
+  },
+  {
+    "id": "granite3-moe",
+    "name": "granite3-moe",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [1.0, 3.0]
+  },
+  {
+    "id": "granite3.1-dense",
+    "name": "granite3.1-dense",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [2.0, 8.0]
+  },
+  {
+    "id": "granite3.1-moe",
+    "name": "granite3.1-moe",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [1.0, 3.0]
+  },
+  {
+    "id": "granite3.2",
+    "name": "granite3.2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [2.0, 8.0]
+  },
+  {
+    "id": "granite3.2-vision",
+    "name": "granite3.2-vision",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["vision"],
+    "attachment": true,
+    "temperature": false,
+    "modalities": {
+      "input": ["image", "text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [2.0]
+  },
+  {
+    "id": "granite3.3",
+    "name": "granite3.3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [2.0, 8.0]
+  },
+  {
+    "id": "hermes3",
+    "name": "hermes3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning", "tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [3.0, 8.0, 70.0, 405.0]
+  },
+  {
+    "id": "internlm2",
+    "name": "internlm2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning", "tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 262144,
+      "output": 0
+    },
+    "size": [0.001, 1.8, 7.0, 20.0]
+  },
+  {
+    "id": "llama-guard3",
+    "name": "llama-guard3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [1.0, 8.0]
+  },
+  {
+    "id": "llama-pro",
+    "name": "llama-pro",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": []
+  },
+  {
+    "id": "llama2",
+    "name": "llama2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [7.0, 13.0, 70.0]
+  },
+  {
+    "id": "llama2-chinese",
+    "name": "llama2-chinese",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [7.0, 13.0]
+  },
+  {
+    "id": "llama2-uncensored",
+    "name": "llama2-uncensored",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 2048,
+      "output": 0
+    },
+    "size": [7.0, 70.0]
+  },
+  {
+    "id": "llama3",
+    "name": "llama 3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [8.0, 70.0]
+  },
+  {
+    "id": "llama3-chatqa",
+    "name": "llama3-chatqa",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [8.0, 70.0]
+  },
+  {
+    "id": "llama3-gradient",
+    "name": "llama3-gradient",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 0,
+      "output": 0
+    },
+    "size": [8.0, 70.0]
+  },
+  {
+    "id": "llama3-groq-tool-use",
+    "name": "llama3-groq-tool-use",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [8.0, 70.0]
+  },
+  {
+    "id": "llama3.1",
+    "name": "llama3.1",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning", "tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [8.0, 70.0, 405.0]
+  },
+  {
+    "id": "llama3.2",
+    "name": "llama3.2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [1.0, 3.0]
+  },
+  {
+    "id": "llama3.2-vision",
+    "name": "llama3.2-vision",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning", "vision"],
+    "attachment": true,
+    "temperature": false,
+    "modalities": {
+      "input": ["image", "text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [11.0, 90.0]
+  },
+  {
+    "id": "llama3.3",
+    "name": "llama3.3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [70.0]
+  },
+  {
+    "id": "llama4",
+    "name": "llama4",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning", "vision"],
+    "attachment": true,
+    "temperature": false,
+    "modalities": {
+      "input": ["image", "text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 0,
+      "output": 0
+    },
+    "size": []
+  },
+  {
+    "id": "llava",
+    "name": "🌋 llava: large language and vision assistant",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning", "vision"],
+    "attachment": true,
+    "temperature": false,
+    "modalities": {
+      "input": ["image", "pdf", "text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0, 13.0, 34.0]
+  },
+  {
+    "id": "llava-llama3",
+    "name": "llava-llama3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [8.0]
+  },
+  {
+    "id": "llava-phi3",
+    "name": "llava-phi3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [3.8]
+  },
+  {
+    "id": "magicoder",
+    "name": "🎩",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "magistral",
+    "name": "magistral",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 39936,
+      "output": 0
+    },
+    "size": [24.0]
+  },
+  {
+    "id": "marco-o1",
+    "name": "marco-o1",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "mathstral",
+    "name": "mathstral",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "meditron",
+    "name": "meditron",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [7.0, 70.0]
+  },
+  {
+    "id": "medllama2",
+    "name": "medllama2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "megadolphin",
+    "name": "megadolphin",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [120.0]
+  },
+  {
+    "id": "minicpm-v",
+    "name": "minicpm-v",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["image", "text", "video"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [8.0]
+  },
+  {
+    "id": "mistral",
+    "name": "mistral",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "mistral-large",
+    "name": "mistral-large",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning", "tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [123.0]
+  },
+  {
+    "id": "mistral-nemo",
+    "name": "mistral-nemo",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 1024000,
+      "output": 0
+    },
+    "size": [12.0]
+  },
+  {
+    "id": "mistral-openorca",
+    "name": "mistral-openorca",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "mistral-small",
+    "name": "mistral-small",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning", "tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [22.0, 24.0]
+  },
+  {
+    "id": "mistral-small3.1",
+    "name": "mistral-small3.1",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning", "tools", "vision"],
+    "attachment": true,
+    "temperature": false,
+    "modalities": {
+      "input": ["image", "text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [24.0]
+  },
+  {
+    "id": "mistral-small3.2",
+    "name": "mistral-small3.2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [24.0]
+  },
+  {
+    "id": "mistrallite",
+    "name": "mistrallite",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "mixtral",
+    "name": "mixtral",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 65536,
+      "output": 0
+    },
+    "size": []
+  },
+  {
+    "id": "moondream",
+    "name": "🌔 moondream 2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["vision"],
+    "attachment": true,
+    "temperature": false,
+    "modalities": {
+      "input": ["image", "text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 2048,
+      "output": 0
+    },
+    "size": [1.8]
+  },
+  {
+    "id": "mxbai-embed-large",
+    "name": "mxbai-embed-large",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["embedding"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 512,
+      "output": 0
+    },
+    "size": [0.335]
+  },
+  {
+    "id": "nemotron",
+    "name": "nemotron",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [70.0]
+  },
+  {
+    "id": "nemotron-mini",
+    "name": "nemotron-mini",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [4.0]
+  },
+  {
+    "id": "neural-chat",
+    "name": "neural-chat",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "nexusraven",
+    "name": "nexusraven",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["tools"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [13.0]
+  },
+  {
+    "id": "nomic-embed-text",
+    "name": "nomic-embed-text",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["embedding"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 2048,
+      "output": 0
+    },
+    "size": []
+  },
+  {
+    "id": "notus",
+    "name": "notus",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "notux",
+    "name": "notux",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": []
+  },
+  {
+    "id": "nous-hermes",
+    "name": "nous-hermes",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [7.0, 13.0]
+  },
+  {
+    "id": "nous-hermes2",
+    "name": "nous-hermes2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [10.7, 34.0]
+  },
+  {
+    "id": "nous-hermes2-mixtral",
+    "name": "nous-hermes2-mixtral",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning", "vision"],
+    "attachment": true,
+    "temperature": false,
+    "modalities": {
+      "input": ["image", "text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": []
+  },
+  {
+    "id": "nuextract",
+    "name": "nuextract",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [3.8]
+  },
+  {
+    "id": "olmo2",
+    "name": "olmo2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [7.0, 13.0]
+  },
+  {
+    "id": "open-orca-platypus2",
+    "name": "open-orca-platypus2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [13.0]
+  },
+  {
+    "id": "openchat",
+    "name": "openchat",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "opencoder",
+    "name": "opencoder",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [1.5, 8.0]
+  },
+  {
+    "id": "openhermes",
+    "name": "openhermes",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": []
+  },
+  {
+    "id": "openthinker",
+    "name": "openthinker",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0, 32.0]
+  },
+  {
+    "id": "orca-mini",
+    "name": "orca-mini",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [3.0, 7.0, 13.0, 70.0]
+  },
+  {
+    "id": "orca2",
+    "name": "orca2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [7.0, 13.0]
+  },
+  {
+    "id": "paraphrase-multilingual",
+    "name": "paraphrase-multilingual",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["embedding"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 512,
+      "output": 0
+    },
+    "size": [0.278]
+  },
+  {
+    "id": "phi",
+    "name": "phi",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 2048,
+      "output": 0
+    },
+    "size": [2.7]
+  },
+  {
+    "id": "phi3",
+    "name": "phi3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning", "vision"],
+    "attachment": true,
+    "temperature": false,
+    "modalities": {
+      "input": ["image", "text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [3.8, 14.0]
+  },
+  {
+    "id": "phi3.5",
+    "name": "phi3.5",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [3.8]
+  },
+  {
+    "id": "phi4",
+    "name": "phi4",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [14.0]
+  },
+  {
+    "id": "phi4-mini",
+    "name": "phi4-mini",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning", "vision"],
+    "attachment": true,
+    "temperature": false,
+    "modalities": {
+      "input": ["image", "text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [3.8]
+  },
+  {
+    "id": "phi4-mini-reasoning",
+    "name": "phi4-mini-reasoning",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [3.8]
+  },
+  {
+    "id": "phi4-reasoning",
+    "name": "phi4-reasoning",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [14.0]
+  },
+  {
+    "id": "phind-codellama",
+    "name": "phind-codellama",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [34.0]
+  },
+  {
+    "id": "qwen",
+    "name": "qwen",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [0.5, 1.8, 4.0, 7.0, 14.0, 32.0, 72.0, 110.0]
+  },
+  {
+    "id": "qwen2",
+    "name": "qwen2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["embedding"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [0.5, 1.5, 7.0, 72.0]
+  },
+  {
+    "id": "qwen2-math",
+    "name": "qwen2-math",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [1.5, 7.0, 72.0]
+  },
+  {
+    "id": "qwen2.5",
+    "name": "qwen2.5",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [0.5, 1.5, 3.0, 7.0, 14.0, 32.0, 72.0]
+  },
+  {
+    "id": "qwen2.5-coder",
+    "name": "qwen2.5-coder",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [0.5, 1.5, 3.0, 7.0, 14.0, 32.0]
+  },
+  {
+    "id": "qwen2.5vl",
+    "name": "qwen2.5vl",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["vision"],
+    "attachment": true,
+    "temperature": false,
+    "modalities": {
+      "input": ["image", "text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 128000,
+      "output": 0
+    },
+    "size": [3.0, 7.0, 32.0, 72.0]
+  },
+  {
+    "id": "qwen3",
+    "name": "qwen3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 40960,
+      "output": 0
+    },
+    "size": [0.6, 1.7, 4.0, 8.0, 14.0, 30.0, 32.0, 235.0]
+  },
+  {
+    "id": "qwq",
+    "name": "qwq",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 40960,
+      "output": 0
+    },
+    "size": [32.0]
+  },
+  {
+    "id": "r1-1776",
+    "name": "r1-1776",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [70.0, 671.0]
+  },
+  {
+    "id": "reader-lm",
+    "name": "reader-lm",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 256000,
+      "output": 0
+    },
+    "size": [0.5, 1.5]
+  },
+  {
+    "id": "reflection",
+    "name": "reflection",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [70.0]
+  },
+  {
+    "id": "sailor2",
+    "name": "sailor2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [1.0, 8.0, 20.0]
+  },
+  {
+    "id": "samantha-mistral",
+    "name": "samantha-mistral",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "shieldgemma",
+    "name": "shieldgemma",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [2.0, 9.0, 27.0]
+  },
+  {
+    "id": "smallthinker",
+    "name": "smallthinker",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [3.0]
+  },
+  {
+    "id": "smollm",
+    "name": "smollm",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 2048,
+      "output": 0
+    },
+    "size": [0.135, 0.36, 1.7]
+  },
+  {
+    "id": "smollm2",
+    "name": "smollm2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [0.135, 0.36, 1.7]
+  },
+  {
+    "id": "snowflake-arctic-embed",
+    "name": "snowflake-arctic-embed",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["embedding"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 2048,
+      "output": 0
+    },
+    "size": [0.022, 0.033, 0.11, 0.137, 0.335]
+  },
+  {
+    "id": "snowflake-arctic-embed2",
+    "name": "snowflake-arctic-embed2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["embedding"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [0.568]
+  },
+  {
+    "id": "solar",
+    "name": "solar",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [10.7]
+  },
+  {
+    "id": "solar-pro",
+    "name": "solar-pro",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [22.0]
+  },
+  {
+    "id": "sqlcoder",
+    "name": "sqlcoder",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0, 15.0]
+  },
+  {
+    "id": "stable-beluga",
+    "name": "stable-beluga",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [7.0, 13.0, 70.0]
+  },
+  {
+    "id": "stable-code",
+    "name": "stable-code",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["embedding"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [3.0]
+  },
+  {
+    "id": "stablelm-zephyr",
+    "name": "stablelm-zephyr",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [3.0]
+  },
+  {
+    "id": "stablelm2",
+    "name": "stablelm2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [1.6, 12.0]
+  },
+  {
+    "id": "starcoder",
+    "name": "starcoder",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [1.0, 3.0, 7.0, 15.0]
+  },
+  {
+    "id": "starcoder2",
+    "name": "starcoder2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [3.0, 7.0, 15.0]
+  },
+  {
+    "id": "starling-lm",
+    "name": "starling-lm",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 8192,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "tinydolphin",
+    "name": "tinydolphin",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [1.1]
+  },
+  {
+    "id": "tinyllama",
+    "name": "tinyllama",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 2048,
+      "output": 0
+    },
+    "size": [1.1]
+  },
+  {
+    "id": "tulu3",
+    "name": "tulu3",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [8.0, 70.0]
+  },
+  {
+    "id": "vicuna",
+    "name": "vicuna",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [7.0, 13.0, 33.0]
+  },
+  {
+    "id": "wizard-math",
+    "name": "wizard-math",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0, 13.0, 70.0]
+  },
+  {
+    "id": "wizard-vicuna",
+    "name": "wizard-vicuna",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 2048,
+      "output": 0
+    },
+    "size": [13.0]
+  },
+  {
+    "id": "wizard-vicuna-uncensored",
+    "name": "wizard-vicuna-uncensored",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 2048,
+      "output": 0
+    },
+    "size": [7.0, 13.0, 30.0]
+  },
+  {
+    "id": "wizardcoder",
+    "name": "wizardcoder",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 16384,
+      "output": 0
+    },
+    "size": [33.0]
+  },
+  {
+    "id": "wizardlm",
+    "name": "wizardlm",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 2048,
+      "output": 0
+    },
+    "size": []
+  },
+  {
+    "id": "wizardlm-uncensored",
+    "name": "wizardlm-uncensored",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [13.0]
+  },
+  {
+    "id": "wizardlm2",
+    "name": "wizardlm2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": ["reasoning"],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 65536,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "xwinlm",
+    "name": "xwinlm",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [7.0, 13.0]
+  },
+  {
+    "id": "yarn-llama2",
+    "name": "yarn-llama2",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 65536,
+      "output": 0
+    },
+    "size": [7.0, 13.0]
+  },
+  {
+    "id": "yarn-mistral",
+    "name": "yarn-mistral",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 32768,
+      "output": 0
+    },
+    "size": [7.0]
+  },
+  {
+    "id": "yi",
+    "name": "yi",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 4096,
+      "output": 0
+    },
+    "size": [6.0, 9.0, 34.0]
+  },
+  {
+    "id": "yi-coder",
+    "name": "yi-coder",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 131072,
+      "output": 0
+    },
+    "size": [1.5, 9.0]
+  },
+  {
+    "id": "zephyr",
+    "name": "zephyr",
+    "provider": "ollama",
+    "provider_id": "ollama",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": ["text"],
+      "output": ["text"]
+    },
+    "limit": {
+      "context": 65536,
+      "output": 0
+    },
+    "size": [7.0, 141.0]
+  }
+]

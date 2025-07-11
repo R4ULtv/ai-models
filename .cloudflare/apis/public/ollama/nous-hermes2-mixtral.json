@@ -1,0 +1,18 @@
+{
+  "id": "nous-hermes2-mixtral",
+  "name": "nous-hermes2-mixtral",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["reasoning", "vision"],
+  "attachment": true,
+  "temperature": false,
+  "modalities": {
+    "input": ["image", "text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 32768,
+    "output": 0
+  },
+  "size": []
+}

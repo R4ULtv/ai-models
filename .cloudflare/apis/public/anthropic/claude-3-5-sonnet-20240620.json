@@ -1,0 +1,32 @@
+{
+  "id": "claude-3-5-sonnet-20240620",
+  "name": "Claude Sonnet 3.5",
+  "provider": "Anthropic",
+  "provider_id": "anthropic",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-04-30",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 3,
+    "output": 15,
+    "cache_read": 0.3,
+    "cache_write": 3.75
+  },
+  "limit": {
+    "context": 200000,
+    "output": 8192
+  }
+}

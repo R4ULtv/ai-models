@@ -1,0 +1,18 @@
+{
+  "id": "nemotron-mini",
+  "name": "nemotron-mini",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["tools"],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 4096,
+    "output": 0
+  },
+  "size": [4.0]
+}

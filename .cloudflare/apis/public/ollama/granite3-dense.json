@@ -1,0 +1,18 @@
+{
+  "id": "granite3-dense",
+  "name": "granite3-dense",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 4096,
+    "output": 0
+  },
+  "size": [2.0, 8.0]
+}

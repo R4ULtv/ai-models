@@ -1,0 +1,28 @@
+{
+  "id": "gpt-4",
+  "name": "GPT-4",
+  "provider": "Azure",
+  "provider_id": "azure",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2023-11",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 60,
+    "output": 120
+  },
+  "limit": {
+    "context": 8192,
+    "output": 8192
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "snowflake-arctic-embed",
+  "name": "snowflake-arctic-embed",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["embedding"],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 2048,
+    "output": 0
+  },
+  "size": [0.022, 0.033, 0.11, 0.137, 0.335]
+}

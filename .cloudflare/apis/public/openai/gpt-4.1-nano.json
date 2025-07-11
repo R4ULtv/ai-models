@@ -1,0 +1,31 @@
+{
+  "id": "gpt-4.1-nano",
+  "name": "GPT-4.1 nano",
+  "provider": "OpenAI",
+  "provider_id": "openai",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-04",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0.1,
+    "output": 0.4,
+    "cache_read": 0.03
+  },
+  "limit": {
+    "context": 1047576,
+    "output": 32768
+  }
+}

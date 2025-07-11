@@ -1,0 +1,18 @@
+{
+  "id": "granite-code",
+  "name": "granite-code",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 128000,
+    "output": 0
+  },
+  "size": [3.0, 8.0, 20.0, 34.0]
+}

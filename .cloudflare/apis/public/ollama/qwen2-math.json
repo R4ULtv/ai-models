@@ -1,0 +1,18 @@
+{
+  "id": "qwen2-math",
+  "name": "qwen2-math",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 4096,
+    "output": 0
+  },
+  "size": [1.5, 7.0, 72.0]
+}

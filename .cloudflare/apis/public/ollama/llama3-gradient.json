@@ -1,0 +1,18 @@
+{
+  "id": "llama3-gradient",
+  "name": "llama3-gradient",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 0,
+    "output": 0
+  },
+  "size": [8.0, 70.0]
+}

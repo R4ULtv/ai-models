@@ -1,0 +1,32 @@
+{
+  "id": "amazon.nova-lite-v1:0",
+  "name": "Nova Lite",
+  "provider": "Amazon Bedrock",
+  "provider_id": "amazon-bedrock",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-10",
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0.06,
+    "output": 0.24,
+    "cache_read": 0.015
+  },
+  "limit": {
+    "context": 300000,
+    "output": 8192
+  }
+}

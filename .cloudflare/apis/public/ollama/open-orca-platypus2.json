@@ -1,0 +1,18 @@
+{
+  "id": "open-orca-platypus2",
+  "name": "open-orca-platypus2",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 4096,
+    "output": 0
+  },
+  "size": [13.0]
+}

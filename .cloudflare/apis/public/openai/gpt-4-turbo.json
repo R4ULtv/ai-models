@@ -1,0 +1,30 @@
+{
+  "id": "gpt-4-turbo",
+  "name": "GPT-4 Turbo",
+  "provider": "OpenAI",
+  "provider_id": "openai",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2023-12",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 10,
+    "output": 30
+  },
+  "limit": {
+    "context": 128000,
+    "output": 4096
+  }
+}

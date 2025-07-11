@@ -1,0 +1,30 @@
+{
+  "id": "o1-preview",
+  "name": "o1-preview",
+  "provider": "Azure",
+  "provider_id": "azure",
+  "capabilities": [
+    "tools",
+    "reasoning"
+  ],
+  "attachment": false,
+  "temperature": false,
+  "knowledge": "2023-09",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 16.5,
+    "output": 66,
+    "cache_read": 8.25
+  },
+  "limit": {
+    "context": 128000,
+    "output": 32768
+  }
+}

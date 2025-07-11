@@ -1,0 +1,18 @@
+{
+  "id": "deepseek-v3",
+  "name": "deepseek-v3",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 4096,
+    "output": 0
+  },
+  "size": [671.0]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "gpt-4",
+  "name": "GPT-4",
+  "provider": "OpenAI",
+  "provider_id": "openai",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2023-11",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 10,
+    "output": 30
+  },
+  "limit": {
+    "context": 8192,
+    "output": 8192
+  }
+}

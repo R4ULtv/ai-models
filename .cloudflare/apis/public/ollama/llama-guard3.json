@@ -1,0 +1,18 @@
+{
+  "id": "llama-guard3",
+  "name": "llama-guard3",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["reasoning"],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 131072,
+    "output": 0
+  },
+  "size": [1.0, 8.0]
+}

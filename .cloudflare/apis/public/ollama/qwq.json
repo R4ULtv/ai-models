@@ -1,0 +1,18 @@
+{
+  "id": "qwq",
+  "name": "qwq",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["reasoning"],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 40960,
+    "output": 0
+  },
+  "size": [32.0]
+}

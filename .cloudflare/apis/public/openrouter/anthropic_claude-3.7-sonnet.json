@@ -1,0 +1,33 @@
+{
+  "id": "anthropic/claude-3.7-sonnet",
+  "name": "Claude Sonnet 3.7",
+  "provider": "OpenRouter",
+  "provider_id": "openrouter",
+  "capabilities": [
+    "tools",
+    "reasoning",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-01",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 15,
+    "output": 75,
+    "cache_read": 1.5,
+    "cache_write": 18.75
+  },
+  "limit": {
+    "context": 200000,
+    "output": 128000
+  }
+}

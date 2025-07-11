@@ -1,0 +1,18 @@
+{
+  "id": "llama3.3",
+  "name": "llama3.3",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 131072,
+    "output": 0
+  },
+  "size": [70.0]
+}
