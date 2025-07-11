@@ -18,7 +18,7 @@ export default function SearchInput() {
   }, [search]);
 
   const handleKeyDown = React.useCallback((e: KeyboardEvent) => {
-    if (e.key === "f" && (e.metaKey || e.ctrlKey)) {
+    if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
       e.preventDefault();
       inputRef.current?.focus();
     }
@@ -60,7 +60,7 @@ export default function SearchInput() {
       </div>
       <div className="text-muted-foreground pointer-events-none absolute inset-y-0 end-0 flex items-center justify-center pe-2">
         <kbd className="text-muted-foreground/70 inline-flex h-5 max-h-full items-center rounded border px-1 font-[inherit] text-[0.625rem] font-medium">
-          ⌘F
+          ⌘K
         </kbd>
       </div>
     </div>
