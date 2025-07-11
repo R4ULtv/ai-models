@@ -1,4 +1,4 @@
-import { z, toJSONSchema } from "zod/v4";
+import { z, toJSONSchema } from "zod";
 
 const modalitySchema = z.enum(["text", "audio", "image", "video", "pdf"]);
 const capabilitySchema = z.enum(["tools", "vision", "reasoning", "embedding"]);
