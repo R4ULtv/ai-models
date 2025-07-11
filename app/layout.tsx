@@ -56,7 +56,7 @@ export default function RootLayout({
       >
         <NuqsAdapter>
           <div className="bg-sidebar m-2 p-2 rounded-xl space-y-2 min-h-[calc(100vh-1rem)]">
-            <header className="bg-sidebar flex items-center justify-between gap-3 px-2">
+            <header className="flex items-center justify-between gap-3 pl-2">
               <div className="flex items-center gap-2">
                 <Link href="/" className="flex items-center gap-2">
                   <BrainIcon className="size-4" />
