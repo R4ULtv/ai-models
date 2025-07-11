@@ -7,7 +7,7 @@ interface Bindings {
   STORAGE: Fetcher;
 }
 
-const CACHE_DURATION = "max-age=600";
+const CACHE_DURATION = "max-age=3600";
 
 const app = new Hono<{ Bindings: Bindings }>();
 
