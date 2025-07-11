@@ -1,0 +1,18 @@
+{
+  "id": "mistral-nemo",
+  "name": "mistral-nemo",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["reasoning"],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 1024000,
+    "output": 0
+  },
+  "size": [12.0]
+}

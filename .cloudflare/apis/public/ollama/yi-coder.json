@@ -1,0 +1,18 @@
+{
+  "id": "yi-coder",
+  "name": "yi-coder",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 131072,
+    "output": 0
+  },
+  "size": [1.5, 9.0]
+}

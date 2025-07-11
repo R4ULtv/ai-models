@@ -1,0 +1,18 @@
+{
+  "id": "all-minilm",
+  "name": "all-minilm",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["embedding"],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 512,
+    "output": 0
+  },
+  "size": [0.022, 0.033]
+}

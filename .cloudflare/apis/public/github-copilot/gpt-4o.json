@@ -1,0 +1,27 @@
+{
+  "id": "gpt-4o",
+  "name": "GPT-4o",
+  "provider": "GitHub Copilot",
+  "provider_id": "github-copilot",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2023-09",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {},
+  "limit": {
+    "context": 128000,
+    "output": 16384
+  }
+}

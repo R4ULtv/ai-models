@@ -1,0 +1,35 @@
+{
+  "id": "gemini-2.5-pro-preview-05-06",
+  "name": "Gemini 2.5 Pro Preview 05-06",
+  "provider": "Vertex",
+  "provider_id": "google-vertex",
+  "capabilities": [
+    "tools",
+    "reasoning",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2025-01",
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "audio",
+      "video",
+      "pdf"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 1.25,
+    "output": 10,
+    "cache_read": 0.31
+  },
+  "limit": {
+    "context": 1048576,
+    "output": 65536
+  }
+}

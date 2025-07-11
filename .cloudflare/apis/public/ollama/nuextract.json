@@ -1,0 +1,18 @@
+{
+  "id": "nuextract",
+  "name": "nuextract",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["reasoning"],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 4096,
+    "output": 0
+  },
+  "size": [3.8]
+}

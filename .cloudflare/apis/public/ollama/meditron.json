@@ -1,0 +1,18 @@
+{
+  "id": "meditron",
+  "name": "meditron",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["reasoning"],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 4096,
+    "output": 0
+  },
+  "size": [7.0, 70.0]
+}

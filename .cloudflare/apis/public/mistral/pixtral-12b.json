@@ -1,0 +1,30 @@
+{
+  "id": "pixtral-12b",
+  "name": "Pixtral 12B",
+  "provider": "Mistral",
+  "provider_id": "mistral",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-09",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0.15,
+    "output": 0.15
+  },
+  "limit": {
+    "context": 128000,
+    "output": 128000
+  }
+}

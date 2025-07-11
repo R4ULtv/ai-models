@@ -1,0 +1,18 @@
+{
+  "id": "gemma3n",
+  "name": "gemma3n",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["reasoning"],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["audio", "image", "text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 32768,
+    "output": 0
+  },
+  "size": []
+}

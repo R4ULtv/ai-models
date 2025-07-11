@@ -1,0 +1,18 @@
+{
+  "id": "phi",
+  "name": "phi",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["reasoning"],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 2048,
+    "output": 0
+  },
+  "size": [2.7]
+}

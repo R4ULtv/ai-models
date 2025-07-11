@@ -1,0 +1,18 @@
+{
+  "id": "zephyr",
+  "name": "zephyr",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 65536,
+    "output": 0
+  },
+  "size": [7.0, 141.0]
+}

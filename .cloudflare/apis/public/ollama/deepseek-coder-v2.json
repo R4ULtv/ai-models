@@ -1,0 +1,18 @@
+{
+  "id": "deepseek-coder-v2",
+  "name": "deepseek-coder-v2",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 163840,
+    "output": 0
+  },
+  "size": [16.0, 236.0]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "meta.llama4-scout-17b-instruct-v1:0",
+  "name": "Llama 4 Scout 17B Instruct",
+  "provider": "Amazon Bedrock",
+  "provider_id": "amazon-bedrock",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-08",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0.17,
+    "output": 0.66
+  },
+  "limit": {
+    "context": 3500000,
+    "output": 16384
+  }
+}

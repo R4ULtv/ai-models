@@ -1,0 +1,18 @@
+{
+  "id": "stable-code",
+  "name": "stable-code",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["embedding"],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 16384,
+    "output": 0
+  },
+  "size": [3.0]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "o4-mini",
+  "name": "o4-mini",
+  "provider": "OpenAI",
+  "provider_id": "openai",
+  "capabilities": [
+    "tools",
+    "reasoning",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": false,
+  "knowledge": "2024-05",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 1.1,
+    "output": 4.4,
+    "cache_read": 0.28
+  },
+  "limit": {
+    "context": 200000,
+    "output": 100000
+  }
+}

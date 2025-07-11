@@ -1,0 +1,31 @@
+{
+  "id": "grok-3-mini-fast",
+  "name": "Grok 3 Mini Fast",
+  "provider": "xAI",
+  "provider_id": "xai",
+  "capabilities": [
+    "tools",
+    "reasoning"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-11",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0.6,
+    "output": 4,
+    "cache_read": 0.15,
+    "cache_write": 4
+  },
+  "limit": {
+    "context": 131072,
+    "output": 8192
+  }
+}

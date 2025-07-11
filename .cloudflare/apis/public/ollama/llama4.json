@@ -1,0 +1,18 @@
+{
+  "id": "llama4",
+  "name": "llama4",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["reasoning", "vision"],
+  "attachment": true,
+  "temperature": false,
+  "modalities": {
+    "input": ["image", "text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 0,
+    "output": 0
+  },
+  "size": []
+}

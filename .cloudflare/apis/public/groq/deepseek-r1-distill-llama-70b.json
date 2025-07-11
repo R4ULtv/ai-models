@@ -1,0 +1,29 @@
+{
+  "id": "deepseek-r1-distill-llama-70b",
+  "name": "DeepSeek R1 Distill Llama 70B",
+  "provider": "Groq",
+  "provider_id": "groq",
+  "capabilities": [
+    "tools",
+    "reasoning"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-07",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0.75,
+    "output": 0.99
+  },
+  "limit": {
+    "context": 131072,
+    "output": 8192
+  }
+}

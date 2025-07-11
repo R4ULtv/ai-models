@@ -1,0 +1,18 @@
+{
+  "id": "r1-1776",
+  "name": "r1-1776",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["reasoning"],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 131072,
+    "output": 0
+  },
+  "size": [70.0, 671.0]
+}

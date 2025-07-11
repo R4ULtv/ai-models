@@ -1,0 +1,30 @@
+{
+  "id": "gpt-4-turbo-vision",
+  "name": "GPT-4 Turbo Vision",
+  "provider": "Azure",
+  "provider_id": "azure",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2023-11",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 10,
+    "output": 30
+  },
+  "limit": {
+    "context": 128000,
+    "output": 4096
+  }
+}

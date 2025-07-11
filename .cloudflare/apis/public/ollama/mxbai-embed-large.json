@@ -1,0 +1,18 @@
+{
+  "id": "mxbai-embed-large",
+  "name": "mxbai-embed-large",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": ["embedding"],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 512,
+    "output": 0
+  },
+  "size": [0.335]
+}

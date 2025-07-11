@@ -1,0 +1,18 @@
+{
+  "id": "llama2-uncensored",
+  "name": "llama2-uncensored",
+  "provider": "ollama",
+  "provider_id": "ollama",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": false,
+  "modalities": {
+    "input": ["text"],
+    "output": ["text"]
+  },
+  "limit": {
+    "context": 2048,
+    "output": 0
+  },
+  "size": [7.0, 70.0]
+}

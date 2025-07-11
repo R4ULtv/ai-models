@@ -1,0 +1,33 @@
+{
+  "id": "anthropic.claude-sonnet-4-20250514-v1:0",
+  "name": "Claude Sonnet 4",
+  "provider": "Amazon Bedrock",
+  "provider_id": "amazon-bedrock",
+  "capabilities": [
+    "tools",
+    "reasoning",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-04",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 3,
+    "output": 15,
+    "cache_read": 0.3,
+    "cache_write": 3.75
+  },
+  "limit": {
+    "context": 200000,
+    "output": 64000
+  }
+}

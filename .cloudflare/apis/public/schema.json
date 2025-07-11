@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "provider_id": {
+      "type": "string"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["tools", "vision", "reasoning", "embedding"]
+      }
+    },
+    "attachment": {
+      "type": "boolean"
+    },
+    "temperature": {
+      "type": "boolean"
+    },
+    "knowledge": {
+      "type": "string"
+    },
+    "modalities": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["text", "audio", "image", "video", "pdf"]
+          }
+        },
+        "output": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["text", "audio", "image", "video", "pdf"]
+          }
+        }
+      },
+      "required": ["input", "output"],
+      "additionalProperties": false
+    },
+    "cost": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "type": "number"
+        },
+        "output": {
+          "type": "number"
+        },
+        "cache_read": {
+          "type": "number"
+        },
+        "cache_write": {
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "limit": {
+      "type": "object",
+      "properties": {
+        "context": {
+          "type": "number"
+        },
+        "output": {
+          "type": "number"
+        }
+      },
+      "required": ["context", "output"],
+      "additionalProperties": false
+    },
+    "size": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "provider",
+    "provider_id",
+    "capabilities",
+    "attachment",
+    "temperature",
+    "modalities",
+    "cost",
+    "limit"
+  ],
+  "additionalProperties": false
+}

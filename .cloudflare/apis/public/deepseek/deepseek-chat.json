@@ -1,0 +1,30 @@
+{
+  "id": "deepseek-chat",
+  "name": "DeepSeek Chat",
+  "provider": "DeepSeek",
+  "provider_id": "deepseek",
+  "capabilities": [
+    "tools",
+    "reasoning"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-07",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0.27,
+    "output": 1.1,
+    "cache_read": 0.07
+  },
+  "limit": {
+    "context": 65536,
+    "output": 8192
+  }
+}
