@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ai-models",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-07-02",
+  "assets": {
+    "directory": "public",
+    "binding": "STORAGE",
+    "run_worker_first": true,
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+  },
+}
