@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 
-import { BrainIcon } from "lucide-react";
+import { BotIcon } from "lucide-react";
 import { GitHub, Ollama } from "@/components/icons";
 
 import { NuqsAdapter } from "nuqs/adapters/next/app";
@@ -59,7 +59,7 @@ export default function RootLayout({
             <header className="flex items-center justify-between gap-3 pl-2">
               <div className="flex items-center gap-2">
                 <Link href="/" className="flex items-center gap-2">
-                  <BrainIcon className="size-4" />
+                  <BotIcon className="size-4" />
                   <h1 className="font-bold text-sm">AI MODELS</h1>
                 </Link>
                 <Separator
