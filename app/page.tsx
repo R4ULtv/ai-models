@@ -2,14 +2,24 @@
 
 import useSWRImmutable from "swr";
 import { useQueryState } from "nuqs";
+import { Suspense } from "react";
 
 import { DataTable } from "@/components/data-table";
 import { columns } from "@/components/columns";
-import { Model } from "@/lib/schema";
 import { TableSkeleton } from "@/components/table-skeleton";
+
+import { Model } from "@/lib/schema";
 import { fetcher } from "@/lib/fetcher";
 
 export default function Page() {
+  return (
+    <Suspense>
+      <Client />
+    </Suspense>
+  );
+}
+
+function Client() {
   const [search] = useQueryState("search", { defaultValue: "" });
 
   const { data, isLoading, error } = useSWRImmutable<Model[]>(
