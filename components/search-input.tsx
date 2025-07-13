@@ -33,18 +33,24 @@ export default function SearchInput() {
     setSearch(debounceSearch);
   }, [setSearch, debounceSearch]);
 
-  const handleInputChange = React.useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    setInputValue(e.target.value);
-  }, []);
+  const handleInputChange = React.useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setInputValue(e.target.value);
+    },
+    [],
+  );
 
-  const handleInputKeyDown = React.useCallback((e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Escape") {
-      inputRef.current?.blur();
-    }
-  }, []);
+  const handleInputKeyDown = React.useCallback(
+    (e: React.KeyboardEvent<HTMLInputElement>) => {
+      if (e.key === "Escape") {
+        inputRef.current?.blur();
+      }
+    },
+    [],
+  );
 
   return (
-    <div className="relative">
+    <div className="relative hidden md:block">
       <Input
         ref={inputRef}
         className="ps-9 pe-11 h-8"
