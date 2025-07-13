@@ -1,35 +1,27 @@
 "use client";
 
-import useSWRImmutable, { Fetcher } from "swr";
+import useSWRImmutable from "swr";
 import { useQueryState } from "nuqs";
-import { Suspense } from "react";
 
 import { DataTable } from "@/components/data-table";
 import { columns } from "@/components/columns";
 import { Model } from "@/lib/schema";
 import { TableSkeleton } from "@/components/table-skeleton";
+import { fetcher } from "@/lib/fetcher";
 
-const fetcher: Fetcher<Model[], string> = (url) =>
-  fetch(url).then((res) => res.json());
 
-export default function Home() {
-  return (
-    <Suspense fallback={<TableSkeleton rows={30} columns={10} />}>
-      <Client />
-    </Suspense>
-  );
-}
-
-function Client() {
+export default function Page() {
   const [search] = useQueryState("search", { defaultValue: "" });
 
-  const { data, error } = useSWRImmutable("/api/ollama/models.json", fetcher, {
-    suspense: true,
-  });
+  const { data, isLoading, error } = useSWRImmutable<Model[]>(
+    "/api/models.json",
+    fetcher,
+  );
 
   if (error) return <div>Error loading data</div>;
+  if (isLoading) return <TableSkeleton rows={30} columns={10} />;
 
-  if (data.length > 0) {
+  if (data && data.length > 0)
     return (
       <DataTable
         columns={columns}
@@ -43,5 +35,4 @@ function Client() {
         }}
       />
     );
-  }
 }
