@@ -5,9 +5,9 @@ import { Model } from "@/lib/schema";
 import numeral from "numeral";
 
 import ProviderLogo from "@/components/provider-logo";
-import { CapabilityBadge } from "@/components/capability-badge";
-import { ModalityBadge } from "@/components/modality-badge";
-import { SizeBadge } from "@/components/size-badge";
+import { CapabilityBadge } from "@/components/table/capability-badge";
+import { ModalityBadge } from "@/components/table/modality-badge";
+import { SizeBadge } from "@/components/table/size-badge";
 import { Checkbox } from "@/components/ui/checkbox";
 
 export const columns: ColumnDef<Model>[] = [
