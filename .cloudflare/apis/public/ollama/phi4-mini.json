@@ -3,16 +3,26 @@
   "name": "phi4-mini",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["reasoning", "vision"],
+  "capabilities": [
+    "reasoning",
+    "vision"
+  ],
   "attachment": true,
   "temperature": false,
   "modalities": {
-    "input": ["image", "text"],
-    "output": ["text"]
+    "input": [
+      "image",
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 131072,
     "output": 0
   },
-  "size": [3.8]
+  "size": [
+    3.8
+  ]
 }

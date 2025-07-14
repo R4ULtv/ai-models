@@ -3,16 +3,25 @@
   "name": "llama3.2",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["tools"],
+  "capabilities": [
+    "tools"
+  ],
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["text"],
-    "output": ["text"]
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 131072,
     "output": 0
   },
-  "size": [1.0, 3.0]
+  "size": [
+    1.0,
+    3.0
+  ]
 }

@@ -1,0 +1,30 @@
+{
+  "id": "google/gemini-2.0-flash-exp:free",
+  "name": "Gemini 2.0 Flash Experimental (free)",
+  "provider": "OpenRouter",
+  "provider_id": "openrouter",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-12",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0,
+    "output": 0
+  },
+  "limit": {
+    "context": 1048576,
+    "output": 1048576
+  }
+}

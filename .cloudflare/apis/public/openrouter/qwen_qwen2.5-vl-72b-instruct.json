@@ -1,0 +1,29 @@
+{
+  "id": "qwen/qwen2.5-vl-72b-instruct",
+  "name": "Qwen2.5 VL 72B Instruct",
+  "provider": "OpenRouter",
+  "provider_id": "openrouter",
+  "capabilities": [
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-10",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0,
+    "output": 0
+  },
+  "limit": {
+    "context": 32768,
+    "output": 8192
+  }
+}

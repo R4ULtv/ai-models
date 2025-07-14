@@ -3,16 +3,24 @@
   "name": "command-a",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["tools"],
+  "capabilities": [
+    "tools"
+  ],
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["text"],
-    "output": ["text"]
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 16384,
     "output": 0
   },
-  "size": [111.0]
+  "size": [
+    111.0
+  ]
 }

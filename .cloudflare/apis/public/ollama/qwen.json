@@ -3,16 +3,31 @@
   "name": "qwen",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["reasoning"],
+  "capabilities": [
+    "reasoning"
+  ],
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["text"],
-    "output": ["text"]
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 32768,
     "output": 0
   },
-  "size": [0.5, 1.8, 4.0, 7.0, 14.0, 32.0, 72.0, 110.0]
+  "size": [
+    0.5,
+    1.8,
+    4.0,
+    7.0,
+    14.0,
+    32.0,
+    72.0,
+    110.0
+  ]
 }

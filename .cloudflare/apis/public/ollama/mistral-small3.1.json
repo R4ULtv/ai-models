@@ -3,16 +3,27 @@
   "name": "mistral-small3.1",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["reasoning", "tools", "vision"],
+  "capabilities": [
+    "reasoning",
+    "tools",
+    "vision"
+  ],
   "attachment": true,
   "temperature": false,
   "modalities": {
-    "input": ["image", "text"],
-    "output": ["text"]
+    "input": [
+      "image",
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 131072,
     "output": 0
   },
-  "size": [24.0]
+  "size": [
+    24.0
+  ]
 }

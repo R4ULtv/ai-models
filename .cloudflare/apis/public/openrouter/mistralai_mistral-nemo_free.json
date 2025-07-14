@@ -1,0 +1,28 @@
+{
+  "id": "mistralai/mistral-nemo:free",
+  "name": "Mistral Nemo (free)",
+  "provider": "OpenRouter",
+  "provider_id": "openrouter",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-07",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0,
+    "output": 0
+  },
+  "limit": {
+    "context": 131072,
+    "output": 131072
+  }
+}

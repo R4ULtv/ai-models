@@ -3,16 +3,24 @@
   "name": "magistral",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["reasoning"],
+  "capabilities": [
+    "reasoning"
+  ],
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["text"],
-    "output": ["text"]
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 39936,
     "output": 0
   },
-  "size": [24.0]
+  "size": [
+    24.0
+  ]
 }

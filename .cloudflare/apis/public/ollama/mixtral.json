@@ -3,12 +3,18 @@
   "name": "mixtral",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["tools"],
+  "capabilities": [
+    "tools"
+  ],
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["text"],
-    "output": ["text"]
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 65536,

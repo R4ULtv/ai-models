@@ -1,6 +1,6 @@
 {
   "id": "claude-sonnet-4",
-  "name": "Claude Sonnet 4 (Preview)",
+  "name": "Claude Sonnet 4",
   "provider": "GitHub Copilot",
   "provider_id": "github-copilot",
   "capabilities": [

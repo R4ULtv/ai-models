@@ -3,16 +3,24 @@
   "name": "phi4-reasoning",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["reasoning"],
+  "capabilities": [
+    "reasoning"
+  ],
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["text"],
-    "output": ["text"]
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 32768,
     "output": 0
   },
-  "size": [14.0]
+  "size": [
+    14.0
+  ]
 }

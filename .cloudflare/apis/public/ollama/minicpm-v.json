@@ -3,16 +3,26 @@
   "name": "minicpm-v",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["reasoning"],
+  "capabilities": [
+    "reasoning"
+  ],
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["image", "text", "video"],
-    "output": ["text"]
+    "input": [
+      "image",
+      "text",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 32768,
     "output": 0
   },
-  "size": [8.0]
+  "size": [
+    8.0
+  ]
 }

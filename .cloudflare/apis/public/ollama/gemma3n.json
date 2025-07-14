@@ -3,12 +3,20 @@
   "name": "gemma3n",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["reasoning"],
+  "capabilities": [
+    "reasoning"
+  ],
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["audio", "image", "text"],
-    "output": ["text"]
+    "input": [
+      "audio",
+      "image",
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 32768,

@@ -1,0 +1,29 @@
+{
+  "id": "moonshotai/kimi-k2",
+  "name": "Kimi K2",
+  "provider": "OpenRouter",
+  "provider_id": "openrouter",
+  "capabilities": [
+    "tools",
+    "reasoning"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-10",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0.57,
+    "output": 2.3
+  },
+  "limit": {
+    "context": 131072,
+    "output": 32768
+  }
+}

@@ -3,16 +3,24 @@
   "name": "snowflake-arctic-embed2",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["embedding"],
+  "capabilities": [
+    "embedding"
+  ],
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["text"],
-    "output": ["text"]
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 8192,
     "output": 0
   },
-  "size": [0.568]
+  "size": [
+    0.568
+  ]
 }

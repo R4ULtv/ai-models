@@ -11,6 +11,7 @@ import { GitHub, Ollama } from "@/components/icons";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import SearchInput from "@/components/search-input";
 import { Suspense } from "react";
+import { ModelForm } from "@/components/model-form";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -105,6 +106,7 @@ export default function RootLayout({
                 <Suspense fallback={<div className="w-[241px] h-8" />}>
                   <SearchInput />
                 </Suspense>
+                <ModelForm />
               </div>
             </header>
             {children}

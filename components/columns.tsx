@@ -8,6 +8,7 @@ import ProviderLogo from "@/components/provider-logo";
 import { CapabilityBadge } from "@/components/capability-badge";
 import { ModalityBadge } from "@/components/modality-badge";
 import { SizeBadge } from "@/components/size-badge";
+import { Checkbox } from "@/components/ui/checkbox";
 
 export const columns: ColumnDef<Model>[] = [
   {
@@ -15,10 +16,18 @@ export const columns: ColumnDef<Model>[] = [
     accessorKey: "icon",
     header: "",
     cell: ({ row }) => (
-      <ProviderLogo
-        className="size-3.5"
-        provider_id={row.original.provider_id}
-      />
+      <label className="size-4 flex">
+        <Checkbox
+          checked={row.getIsSelected()}
+          onCheckedChange={(value) => row.toggleSelected(!!value)}
+          aria-label="Select row"
+          className="peer data-[state=unchecked]:sr-only after:absolute after:inset-0"
+        />
+        <ProviderLogo
+          className="size-4 peer-has-data-[state=checked]:invisible"
+          provider_id={row.original.provider_id}
+        />
+      </label>
     ),
     enableGlobalFilter: false,
   },

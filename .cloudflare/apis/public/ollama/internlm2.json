@@ -3,16 +3,28 @@
   "name": "internlm2",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["reasoning", "tools"],
+  "capabilities": [
+    "reasoning",
+    "tools"
+  ],
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["text"],
-    "output": ["text"]
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 262144,
     "output": 0
   },
-  "size": [0.001, 1.8, 7.0, 20.0]
+  "size": [
+    0.001,
+    1.8,
+    7.0,
+    20.0
+  ]
 }

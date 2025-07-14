@@ -3,16 +3,25 @@
   "name": "all-minilm",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["embedding"],
+  "capabilities": [
+    "embedding"
+  ],
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["text"],
-    "output": ["text"]
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 512,
     "output": 0
   },
-  "size": [0.022, 0.033]
+  "size": [
+    0.022,
+    0.033
+  ]
 }

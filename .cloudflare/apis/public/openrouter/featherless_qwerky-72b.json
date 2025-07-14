@@ -1,0 +1,26 @@
+{
+  "id": "featherless/qwerky-72b",
+  "name": "Qwerky 72B",
+  "provider": "OpenRouter",
+  "provider_id": "openrouter",
+  "capabilities": [],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-10",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0,
+    "output": 0
+  },
+  "limit": {
+    "context": 32768,
+    "output": 8192
+  }
+}

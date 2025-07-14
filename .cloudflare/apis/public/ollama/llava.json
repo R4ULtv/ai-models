@@ -3,16 +3,29 @@
   "name": "🌋 llava: large language and vision assistant",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["reasoning", "vision"],
+  "capabilities": [
+    "reasoning",
+    "vision"
+  ],
   "attachment": true,
   "temperature": false,
   "modalities": {
-    "input": ["image", "pdf", "text"],
-    "output": ["text"]
+    "input": [
+      "image",
+      "pdf",
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 32768,
     "output": 0
   },
-  "size": [7.0, 13.0, 34.0]
+  "size": [
+    7.0,
+    13.0,
+    34.0
+  ]
 }

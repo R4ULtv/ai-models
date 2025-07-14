@@ -1,0 +1,30 @@
+{
+  "id": "meta-llama/llama-4-scout:free",
+  "name": "Llama 4 Scout (free)",
+  "provider": "OpenRouter",
+  "provider_id": "openrouter",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-08",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0,
+    "output": 0
+  },
+  "limit": {
+    "context": 64000,
+    "output": 64000
+  }
+}

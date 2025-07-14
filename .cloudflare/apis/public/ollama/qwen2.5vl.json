@@ -3,16 +3,28 @@
   "name": "qwen2.5vl",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["vision"],
+  "capabilities": [
+    "vision"
+  ],
   "attachment": true,
   "temperature": false,
   "modalities": {
-    "input": ["image", "text"],
-    "output": ["text"]
+    "input": [
+      "image",
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 128000,
     "output": 0
   },
-  "size": [3.0, 7.0, 32.0, 72.0]
+  "size": [
+    3.0,
+    7.0,
+    32.0,
+    72.0
+  ]
 }

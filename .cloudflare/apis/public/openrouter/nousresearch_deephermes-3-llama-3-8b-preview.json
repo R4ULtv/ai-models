@@ -1,0 +1,29 @@
+{
+  "id": "nousresearch/deephermes-3-llama-3-8b-preview",
+  "name": "DeepHermes 3 Llama 3 8B Preview",
+  "provider": "OpenRouter",
+  "provider_id": "openrouter",
+  "capabilities": [
+    "tools",
+    "reasoning"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-04",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0,
+    "output": 0
+  },
+  "limit": {
+    "context": 131072,
+    "output": 8192
+  }
+}

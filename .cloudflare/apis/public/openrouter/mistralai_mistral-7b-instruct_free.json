@@ -1,0 +1,28 @@
+{
+  "id": "mistralai/mistral-7b-instruct:free",
+  "name": "Mistral 7B Instruct (free)",
+  "provider": "OpenRouter",
+  "provider_id": "openrouter",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-05",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0,
+    "output": 0
+  },
+  "limit": {
+    "context": 32768,
+    "output": 32768
+  }
+}

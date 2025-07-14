@@ -1,0 +1,29 @@
+{
+  "id": "rekaai/reka-flash-3",
+  "name": "Reka Flash 3",
+  "provider": "OpenRouter",
+  "provider_id": "openrouter",
+  "capabilities": [
+    "tools",
+    "reasoning"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-10",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0,
+    "output": 0
+  },
+  "limit": {
+    "context": 32768,
+    "output": 8192
+  }
+}

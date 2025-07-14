@@ -3,16 +3,29 @@
   "name": "gemma3",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["reasoning", "vision"],
+  "capabilities": [
+    "reasoning",
+    "vision"
+  ],
   "attachment": true,
   "temperature": false,
   "modalities": {
-    "input": ["image", "text"],
-    "output": ["text"]
+    "input": [
+      "image",
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 131072,
     "output": 0
   },
-  "size": [1.0, 4.0, 12.0, 27.0]
+  "size": [
+    1.0,
+    4.0,
+    12.0,
+    27.0
+  ]
 }

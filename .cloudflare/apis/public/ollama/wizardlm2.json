@@ -3,16 +3,24 @@
   "name": "wizardlm2",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["reasoning"],
+  "capabilities": [
+    "reasoning"
+  ],
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["text"],
-    "output": ["text"]
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 65536,
     "output": 0
   },
-  "size": [7.0]
+  "size": [
+    7.0
+  ]
 }

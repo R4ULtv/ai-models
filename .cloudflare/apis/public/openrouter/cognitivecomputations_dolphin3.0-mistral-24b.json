@@ -1,0 +1,28 @@
+{
+  "id": "cognitivecomputations/dolphin3.0-mistral-24b",
+  "name": "Dolphin3.0 Mistral 24B",
+  "provider": "OpenRouter",
+  "provider_id": "openrouter",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-10",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0,
+    "output": 0
+  },
+  "limit": {
+    "context": 32768,
+    "output": 8192
+  }
+}

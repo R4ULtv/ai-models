@@ -7,12 +7,19 @@
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["text"],
-    "output": ["text"]
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 163840,
     "output": 0
   },
-  "size": [16.0, 236.0]
+  "size": [
+    16.0,
+    236.0
+  ]
 }

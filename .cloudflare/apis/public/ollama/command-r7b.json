@@ -3,16 +3,26 @@
   "name": "command-r7b",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["embedding", "reasoning", "tools"],
+  "capabilities": [
+    "embedding",
+    "reasoning",
+    "tools"
+  ],
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["text"],
-    "output": ["text"]
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 8192,
     "output": 0
   },
-  "size": [7.0]
+  "size": [
+    7.0
+  ]
 }

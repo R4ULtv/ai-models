@@ -3,16 +3,25 @@
   "name": "granite3.2-vision",
   "provider": "ollama",
   "provider_id": "ollama",
-  "capabilities": ["vision"],
+  "capabilities": [
+    "vision"
+  ],
   "attachment": true,
   "temperature": false,
   "modalities": {
-    "input": ["image", "text"],
-    "output": ["text"]
+    "input": [
+      "image",
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 16384,
     "output": 0
   },
-  "size": [2.0]
+  "size": [
+    2.0
+  ]
 }

@@ -7,12 +7,20 @@
   "attachment": false,
   "temperature": false,
   "modalities": {
-    "input": ["image", "pdf", "text"],
-    "output": ["text"]
+    "input": [
+      "image",
+      "pdf",
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
   },
   "limit": {
     "context": 32768,
     "output": 0
   },
-  "size": [7.0]
+  "size": [
+    7.0
+  ]
 }
