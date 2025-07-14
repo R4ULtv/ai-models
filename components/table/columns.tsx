@@ -16,15 +16,16 @@ export const columns: ColumnDef<Model>[] = [
     accessorKey: "icon",
     header: "",
     cell: ({ row }) => (
-      <label className="size-4 flex">
+      <label className="size-4 flex group">
         <Checkbox
           checked={row.getIsSelected()}
-          onCheckedChange={(value) => row.toggleSelected(!!value)}
+          disabled={!row.getCanSelect()}
+          onCheckedChange={row.getToggleSelectedHandler()}
           aria-label="Select row"
-          className="peer data-[state=unchecked]:sr-only after:absolute after:inset-0"
+          className="data-[state=unchecked]:sr-only after:absolute after:inset-0"
         />
         <ProviderLogo
-          className="size-4 peer-has-data-[state=checked]:invisible"
+          className="size-4 group-has-data-[state=checked]:hidden"
           provider_id={row.original.provider_id}
         />
       </label>
