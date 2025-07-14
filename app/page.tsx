@@ -4,9 +4,9 @@ import useSWRImmutable from "swr";
 import { useQueryState } from "nuqs";
 import { Suspense } from "react";
 
-import { DataTable } from "@/components/data-table";
-import { columns } from "@/components/columns";
-import { TableSkeleton } from "@/components/table-skeleton";
+import { DataTable } from "@/components/table/data-table";
+import { columns } from "@/components/table/columns";
+import { TableSkeleton } from "@/components/table/table-skeleton";
 
 import { Model } from "@/lib/schema";
 import { fetcher } from "@/lib/fetcher";
