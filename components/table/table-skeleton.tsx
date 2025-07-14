@@ -51,7 +51,7 @@ export function TableSkeleton({
                   <Skeleton
                     className={cn(
                       "h-4",
-                      colIndex === 0 && "w-[32px]",
+                      colIndex === 0 && "w-[16px]",
                       colIndex === 1 && "w-[126px]",
                       colIndex === 2 && "w-[366px]",
                       colIndex === 3 && "w-[96px]",
