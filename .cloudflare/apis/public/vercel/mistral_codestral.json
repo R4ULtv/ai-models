@@ -1,8 +1,8 @@
 {
-  "id": "moonshotai/kimi-k2",
-  "name": "Kimi K2",
-  "provider": "OpenRouter",
-  "provider_id": "openrouter",
+  "id": "mistral/codestral",
+  "name": "Codestral",
+  "provider": "Vercel AI Gateway",
+  "provider_id": "vercel",
   "capabilities": [
     "tools"
   ],
@@ -18,11 +18,11 @@
     ]
   },
   "cost": {
-    "input": 0.57,
-    "output": 2.3
+    "input": 0.3,
+    "output": 0.9
   },
   "limit": {
-    "context": 131072,
-    "output": 32768
+    "context": 256000,
+    "output": 4096
   }
 }

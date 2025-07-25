@@ -1,0 +1,32 @@
+{
+  "id": "openai/o1",
+  "name": "o1",
+  "provider": "Vercel AI Gateway",
+  "provider_id": "vercel",
+  "capabilities": [
+    "tools",
+    "reasoning",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": false,
+  "knowledge": "2023-09",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 15,
+    "output": 60,
+    "cache_read": 7.5
+  },
+  "limit": {
+    "context": 200000,
+    "output": 100000
+  }
+}

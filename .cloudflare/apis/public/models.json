@@ -3222,6 +3222,34 @@
     }
   },
   {
+    "id": "moonshotai/kimi-k2-instruct",
+    "name": "Kimi K2 Instruct",
+    "provider": "Groq",
+    "provider_id": "groq",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-10",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 1,
+      "output": 3
+    },
+    "limit": {
+      "context": 131072,
+      "output": 16384
+    }
+  },
+  {
     "id": "qwen-qwq-32b",
     "name": "Qwen QwQ 32B",
     "provider": "Groq",
@@ -3272,6 +3300,91 @@
     "cost": {
       "input": 0.29,
       "output": 0.59
+    },
+    "limit": {
+      "context": 131072,
+      "output": 16384
+    }
+  },
+  {
+    "id": "deepseek-r1-0528",
+    "name": "DeepSeek-R1-0528",
+    "provider": "Hugging Face",
+    "provider_id": "huggingface",
+    "capabilities": [
+      "tools",
+      "reasoning"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2025-05",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 3,
+      "output": 5
+    },
+    "limit": {
+      "context": 163840,
+      "output": 163840
+    }
+  },
+  {
+    "id": "deepseek-v3-0324",
+    "name": "DeepSeek-V3-0324",
+    "provider": "Hugging Face",
+    "provider_id": "huggingface",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-10",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 1.25,
+      "output": 1.25
+    },
+    "limit": {
+      "context": 16384,
+      "output": 8192
+    }
+  },
+  {
+    "id": "kimi-k2-instruct",
+    "name": "Kimi-K2-Instruct",
+    "provider": "Hugging Face",
+    "provider_id": "huggingface",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-10",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 1,
+      "output": 3
     },
     "limit": {
       "context": 131072,
@@ -4070,6 +4183,33 @@
     }
   },
   {
+    "id": "gpt-3.5-turbo",
+    "name": "GPT-3.5-turbo",
+    "provider": "OpenAI",
+    "provider_id": "openai",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2021-09-01",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.5,
+      "output": 1.5,
+      "cache_read": 1.25
+    },
+    "limit": {
+      "context": 16385,
+      "output": 4096
+    }
+  },
+  {
     "id": "gpt-4",
     "name": "GPT-4",
     "provider": "OpenAI",
@@ -4218,37 +4358,6 @@
     "limit": {
       "context": 1047576,
       "output": 32768
-    }
-  },
-  {
-    "id": "gpt-4.5-preview",
-    "name": "GPT-4.5 Preview",
-    "provider": "OpenAI",
-    "provider_id": "openai",
-    "capabilities": [
-      "tools",
-      "vision"
-    ],
-    "attachment": true,
-    "temperature": true,
-    "knowledge": "2024-04",
-    "modalities": {
-      "input": [
-        "text",
-        "image"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "cost": {
-      "input": 75,
-      "output": 150,
-      "cache_read": 37.5
-    },
-    "limit": {
-      "context": 128000,
-      "output": 16384
     }
   },
   {
@@ -4621,6 +4730,38 @@
     "limit": {
       "context": 200000,
       "output": 100000
+    }
+  },
+  {
+    "id": "anthropic/claude-3.5-haiku",
+    "name": "Claude Haiku 3.5",
+    "provider": "OpenRouter",
+    "provider_id": "openrouter",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-07-31",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.8,
+      "output": 4,
+      "cache_read": 0.08,
+      "cache_write": 1
+    },
+    "limit": {
+      "context": 200000,
+      "output": 8192
     }
   },
   {
@@ -5065,8 +5206,8 @@
     }
   },
   {
-    "id": "google/gemini-2.5-flash-preview-04-17",
-    "name": "Gemini 2.5 Flash Preview 04-17",
+    "id": "google/gemini-2.5-flash",
+    "name": "Gemini 2.5 Flash",
     "provider": "OpenRouter",
     "provider_id": "openrouter",
     "capabilities": [
@@ -5090,43 +5231,8 @@
       ]
     },
     "cost": {
-      "input": 0.15,
-      "output": 0.6,
-      "cache_read": 0.0375
-    },
-    "limit": {
-      "context": 1048576,
-      "output": 65536
-    }
-  },
-  {
-    "id": "google/gemini-2.5-flash-preview-05-20",
-    "name": "Gemini 2.5 Flash Preview 05-20",
-    "provider": "OpenRouter",
-    "provider_id": "openrouter",
-    "capabilities": [
-      "tools",
-      "reasoning",
-      "vision"
-    ],
-    "attachment": true,
-    "temperature": true,
-    "knowledge": "2025-01",
-    "modalities": {
-      "input": [
-        "text",
-        "image",
-        "audio",
-        "video",
-        "pdf"
-      ],
-      "output": [
-        "text"
-      ]
-    },
-    "cost": {
-      "input": 0.15,
-      "output": 0.6,
+      "input": 0.3,
+      "output": 2.5,
       "cache_read": 0.0375
     },
     "limit": {
@@ -5796,10 +5902,9 @@
     "provider": "OpenRouter",
     "provider_id": "openrouter",
     "capabilities": [
-      "tools",
-      "reasoning"
+      "tools"
     ],
-    "attachment": true,
+    "attachment": false,
     "temperature": true,
     "knowledge": "2024-10",
     "modalities": {
@@ -6147,6 +6252,62 @@
     }
   },
   {
+    "id": "qwen/qwen3-235b-a22b-07-25",
+    "name": "Qwen3 235B A22B Instruct 2507",
+    "provider": "OpenRouter",
+    "provider_id": "openrouter",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2025-04",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.15,
+      "output": 0.85
+    },
+    "limit": {
+      "context": 262144,
+      "output": 131072
+    }
+  },
+  {
+    "id": "qwen/qwen3-235b-a22b-07-25:free",
+    "name": "Qwen3 235B A22B Instruct 2507 (free)",
+    "provider": "OpenRouter",
+    "provider_id": "openrouter",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2025-04",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0,
+      "output": 0
+    },
+    "limit": {
+      "context": 262144,
+      "output": 131072
+    }
+  },
+  {
     "id": "qwen/qwen3-235b-a22b:free",
     "name": "Qwen3 235B A22B (free)",
     "provider": "OpenRouter",
@@ -6260,6 +6421,34 @@
     "limit": {
       "context": 40960,
       "output": 40960
+    }
+  },
+  {
+    "id": "qwen/qwen3-coder",
+    "name": "Qwen3 Coder 480B A35B Instruct",
+    "provider": "OpenRouter",
+    "provider_id": "openrouter",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2025-04",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 1.5,
+      "output": 2
+    },
+    "limit": {
+      "context": 262144,
+      "output": 66536
     }
   },
   {
@@ -6563,8 +6752,8 @@
   {
     "id": "v0-1.0-md",
     "name": "v0-1.0-md",
-    "provider": "Vercel",
-    "provider_id": "vercel",
+    "provider": "v0",
+    "provider_id": "v0",
     "capabilities": [
       "tools",
       "reasoning",
@@ -6593,8 +6782,8 @@
   {
     "id": "v0-1.5-lg",
     "name": "v0-1.5-lg",
-    "provider": "Vercel",
-    "provider_id": "vercel",
+    "provider": "v0",
+    "provider_id": "v0",
     "capabilities": [
       "tools",
       "reasoning",
@@ -6623,8 +6812,8 @@
   {
     "id": "v0-1.5-md",
     "name": "v0-1.5-md",
-    "provider": "Vercel",
-    "provider_id": "vercel",
+    "provider": "v0",
+    "provider_id": "v0",
     "capabilities": [
       "tools",
       "reasoning",
@@ -6648,6 +6837,1501 @@
     "limit": {
       "context": 128000,
       "output": 32000
+    }
+  },
+  {
+    "id": "amazon/nova-lite",
+    "name": "Nova Lite",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-10",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.06,
+      "output": 0.24,
+      "cache_read": 0.015
+    },
+    "limit": {
+      "context": 300000,
+      "output": 8192
+    }
+  },
+  {
+    "id": "amazon/nova-micro",
+    "name": "Nova Micro",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-10",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.035,
+      "output": 0.14,
+      "cache_read": 0.00875
+    },
+    "limit": {
+      "context": 128000,
+      "output": 8192
+    }
+  },
+  {
+    "id": "amazon/nova-pro",
+    "name": "Nova Pro",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-10",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.8,
+      "output": 3.2,
+      "cache_read": 0.2
+    },
+    "limit": {
+      "context": 300000,
+      "output": 8192
+    }
+  },
+  {
+    "id": "anthropic/claude-3-5-haiku",
+    "name": "Claude Haiku 3.5",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-07-31",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.8,
+      "output": 4,
+      "cache_read": 0.08,
+      "cache_write": 1
+    },
+    "limit": {
+      "context": 200000,
+      "output": 8192
+    }
+  },
+  {
+    "id": "anthropic/claude-3-haiku",
+    "name": "Claude Haiku 3",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2023-08-31",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.25,
+      "output": 1.25,
+      "cache_read": 0.03,
+      "cache_write": 0.3
+    },
+    "limit": {
+      "context": 200000,
+      "output": 4096
+    }
+  },
+  {
+    "id": "anthropic/claude-3-opus",
+    "name": "Claude Opus 3",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2023-08-31",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 15,
+      "output": 75,
+      "cache_read": 1.5,
+      "cache_write": 18.75
+    },
+    "limit": {
+      "context": 200000,
+      "output": 4096
+    }
+  },
+  {
+    "id": "anthropic/claude-3.5-sonnet",
+    "name": "Claude Sonnet 3.5 v2",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-04-30",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
+      "cache_write": 3.75
+    },
+    "limit": {
+      "context": 200000,
+      "output": 8192
+    }
+  },
+  {
+    "id": "anthropic/claude-3.7-sonnet",
+    "name": "Claude Sonnet 3.7",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-10-31",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
+      "cache_write": 3.75
+    },
+    "limit": {
+      "context": 200000,
+      "output": 64000
+    }
+  },
+  {
+    "id": "anthropic/claude-4-opus",
+    "name": "Claude Opus 4",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2025-03-31",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 15,
+      "output": 75,
+      "cache_read": 1.5,
+      "cache_write": 18.75
+    },
+    "limit": {
+      "context": 200000,
+      "output": 32000
+    }
+  },
+  {
+    "id": "anthropic/claude-4-sonnet",
+    "name": "Claude Sonnet 4",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2025-03-31",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
+      "cache_write": 3.75
+    },
+    "limit": {
+      "context": 200000,
+      "output": 64000
+    }
+  },
+  {
+    "id": "deepseek/deepseek-r1",
+    "name": "DeepSeek-R1",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-07",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 1.35,
+      "output": 5.4
+    },
+    "limit": {
+      "context": 128000,
+      "output": 32768
+    }
+  },
+  {
+    "id": "deepseek/deepseek-r1-distill-llama-70b",
+    "name": "DeepSeek R1 Distill Llama 70B",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-07",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.75,
+      "output": 0.99
+    },
+    "limit": {
+      "context": 131072,
+      "output": 8192
+    }
+  },
+  {
+    "id": "google/gemini-2.0-flash",
+    "name": "Gemini 2.0 Flash",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-06",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.1,
+      "output": 0.4,
+      "cache_read": 0.025
+    },
+    "limit": {
+      "context": 1048576,
+      "output": 8192
+    }
+  },
+  {
+    "id": "google/gemini-2.0-flash-lite",
+    "name": "Gemini 2.0 Flash Lite",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-06",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.075,
+      "output": 0.3
+    },
+    "limit": {
+      "context": 1048576,
+      "output": 8192
+    }
+  },
+  {
+    "id": "google/gemini-2.5-flash",
+    "name": "Gemini 2.5 Flash",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2025-01",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.3,
+      "output": 2.5,
+      "cache_read": 0.075
+    },
+    "limit": {
+      "context": 1048576,
+      "output": 65536
+    }
+  },
+  {
+    "id": "google/gemini-2.5-pro",
+    "name": "Gemini 2.5 Pro",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2025-01",
+    "modalities": {
+      "input": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "pdf"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 1.25,
+      "output": 10,
+      "cache_read": 0.31
+    },
+    "limit": {
+      "context": 1048576,
+      "output": 65536
+    }
+  },
+  {
+    "id": "meta/llama-3.3-70b",
+    "name": "Llama-3.3-70B-Instruct",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2023-12",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0,
+      "output": 0
+    },
+    "limit": {
+      "context": 128000,
+      "output": 4096
+    }
+  },
+  {
+    "id": "meta/llama-4-maverick",
+    "name": "Llama-4-Maverick-17B-128E-Instruct-FP8",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-08",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0,
+      "output": 0
+    },
+    "limit": {
+      "context": 128000,
+      "output": 4096
+    }
+  },
+  {
+    "id": "meta/llama-4-scout",
+    "name": "Llama-4-Scout-17B-16E-Instruct-FP8",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-08",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0,
+      "output": 0
+    },
+    "limit": {
+      "context": 128000,
+      "output": 4096
+    }
+  },
+  {
+    "id": "mistral/codestral",
+    "name": "Codestral",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-10",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.3,
+      "output": 0.9
+    },
+    "limit": {
+      "context": 256000,
+      "output": 4096
+    }
+  },
+  {
+    "id": "mistral/magistral-medium",
+    "name": "Magistral Medium",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2025-06",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 2,
+      "output": 5
+    },
+    "limit": {
+      "context": 128000,
+      "output": 16384
+    }
+  },
+  {
+    "id": "mistral/magistral-small",
+    "name": "Magistral Small",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2025-06",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.5,
+      "output": 1.5
+    },
+    "limit": {
+      "context": 128000,
+      "output": 128000
+    }
+  },
+  {
+    "id": "mistral/ministral-3b",
+    "name": "Ministral 3B",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-10",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.04,
+      "output": 0.04
+    },
+    "limit": {
+      "context": 128000,
+      "output": 128000
+    }
+  },
+  {
+    "id": "mistral/ministral-8b",
+    "name": "Ministral 8B",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-10",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.1,
+      "output": 0.1
+    },
+    "limit": {
+      "context": 128000,
+      "output": 128000
+    }
+  },
+  {
+    "id": "mistral/mistral-large",
+    "name": "Mistral Large",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-11",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 2,
+      "output": 6
+    },
+    "limit": {
+      "context": 131072,
+      "output": 16384
+    }
+  },
+  {
+    "id": "mistral/mistral-small",
+    "name": "Mistral Small",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2025-03",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.1,
+      "output": 0.3
+    },
+    "limit": {
+      "context": 128000,
+      "output": 16384
+    }
+  },
+  {
+    "id": "mistral/mixtral-8x22b-instruct",
+    "name": "Mixtral 8x22B",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-04",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 2,
+      "output": 6
+    },
+    "limit": {
+      "context": 64000,
+      "output": 64000
+    }
+  },
+  {
+    "id": "mistral/pixtral-12b",
+    "name": "Pixtral 12B",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-09",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.15,
+      "output": 0.15
+    },
+    "limit": {
+      "context": 128000,
+      "output": 128000
+    }
+  },
+  {
+    "id": "mistral/pixtral-large",
+    "name": "Pixtral Large",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-11",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 2,
+      "output": 6
+    },
+    "limit": {
+      "context": 128000,
+      "output": 128000
+    }
+  },
+  {
+    "id": "moonshotai/kimi-k2",
+    "name": "Kimi K2 Instruct",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-10",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 1,
+      "output": 3
+    },
+    "limit": {
+      "context": 131072,
+      "output": 16384
+    }
+  },
+  {
+    "id": "morph/morph-v3-fast",
+    "name": "Morph v3 Fast",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.8,
+      "output": 1.2
+    },
+    "limit": {
+      "context": 16000,
+      "output": 16000
+    }
+  },
+  {
+    "id": "morph/morph-v3-large",
+    "name": "Morph v3 Large",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [],
+    "attachment": false,
+    "temperature": false,
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.9,
+      "output": 1.9
+    },
+    "limit": {
+      "context": 32000,
+      "output": 32000
+    }
+  },
+  {
+    "id": "openai/gpt-4-turbo",
+    "name": "GPT-4 Turbo",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2023-12",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 10,
+      "output": 30
+    },
+    "limit": {
+      "context": 128000,
+      "output": 4096
+    }
+  },
+  {
+    "id": "openai/gpt-4.1",
+    "name": "GPT-4.1",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-04",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 2,
+      "output": 8,
+      "cache_read": 0.5
+    },
+    "limit": {
+      "context": 1047576,
+      "output": 32768
+    }
+  },
+  {
+    "id": "openai/gpt-4.1-mini",
+    "name": "GPT-4.1 mini",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-04",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.4,
+      "output": 1.6,
+      "cache_read": 0.1
+    },
+    "limit": {
+      "context": 1047576,
+      "output": 32768
+    }
+  },
+  {
+    "id": "openai/gpt-4.1-nano",
+    "name": "GPT-4.1 nano",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-04",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.1,
+      "output": 0.4,
+      "cache_read": 0.03
+    },
+    "limit": {
+      "context": 1047576,
+      "output": 32768
+    }
+  },
+  {
+    "id": "openai/gpt-4o",
+    "name": "GPT-4o",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2023-09",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 2.5,
+      "output": 10,
+      "cache_read": 1.25
+    },
+    "limit": {
+      "context": 128000,
+      "output": 16384
+    }
+  },
+  {
+    "id": "openai/gpt-4o-mini",
+    "name": "GPT-4o mini",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2023-09",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.15,
+      "output": 0.6,
+      "cache_read": 0.08
+    },
+    "limit": {
+      "context": 128000,
+      "output": 16384
+    }
+  },
+  {
+    "id": "openai/o1",
+    "name": "o1",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": false,
+    "knowledge": "2023-09",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 15,
+      "output": 60,
+      "cache_read": 7.5
+    },
+    "limit": {
+      "context": 200000,
+      "output": 100000
+    }
+  },
+  {
+    "id": "openai/o3",
+    "name": "o3",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": false,
+    "knowledge": "2024-05",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 2,
+      "output": 8,
+      "cache_read": 0.5
+    },
+    "limit": {
+      "context": 200000,
+      "output": 100000
+    }
+  },
+  {
+    "id": "openai/o3-mini",
+    "name": "o3-mini",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning"
+    ],
+    "attachment": false,
+    "temperature": false,
+    "knowledge": "2024-05",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 1.1,
+      "output": 4.4,
+      "cache_read": 0.55
+    },
+    "limit": {
+      "context": 200000,
+      "output": 100000
+    }
+  },
+  {
+    "id": "openai/o4-mini",
+    "name": "o4-mini",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": false,
+    "knowledge": "2024-05",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 1.1,
+      "output": 4.4,
+      "cache_read": 0.28
+    },
+    "limit": {
+      "context": 200000,
+      "output": 100000
+    }
+  },
+  {
+    "id": "xai/grok-2",
+    "name": "Grok 2",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-08",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 2,
+      "output": 10,
+      "cache_read": 2,
+      "cache_write": 10
+    },
+    "limit": {
+      "context": 131072,
+      "output": 8192
+    }
+  },
+  {
+    "id": "xai/grok-2-vision",
+    "name": "Grok 2 Vision",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "vision"
+    ],
+    "attachment": true,
+    "temperature": true,
+    "knowledge": "2024-08",
+    "modalities": {
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 2,
+      "output": 10,
+      "cache_read": 2,
+      "cache_write": 10
+    },
+    "limit": {
+      "context": 8192,
+      "output": 4096
+    }
+  },
+  {
+    "id": "xai/grok-3",
+    "name": "Grok 3",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-11",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.75,
+      "cache_write": 15
+    },
+    "limit": {
+      "context": 131072,
+      "output": 8192
+    }
+  },
+  {
+    "id": "xai/grok-3-fast",
+    "name": "Grok 3 Fast",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-11",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 5,
+      "output": 25,
+      "cache_read": 1.25,
+      "cache_write": 25
+    },
+    "limit": {
+      "context": 131072,
+      "output": 8192
+    }
+  },
+  {
+    "id": "xai/grok-3-mini",
+    "name": "Grok 3 Mini",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-11",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.3,
+      "output": 0.5,
+      "cache_read": 0.075,
+      "cache_write": 0.5
+    },
+    "limit": {
+      "context": 131072,
+      "output": 8192
+    }
+  },
+  {
+    "id": "xai/grok-3-mini-fast",
+    "name": "Grok 3 Mini Fast",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2024-11",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 0.6,
+      "output": 4,
+      "cache_read": 0.15,
+      "cache_write": 4
+    },
+    "limit": {
+      "context": 131072,
+      "output": 8192
+    }
+  },
+  {
+    "id": "xai/grok-4",
+    "name": "Grok 4",
+    "provider": "Vercel AI Gateway",
+    "provider_id": "vercel",
+    "capabilities": [
+      "tools",
+      "reasoning"
+    ],
+    "attachment": false,
+    "temperature": true,
+    "knowledge": "2025-07",
+    "modalities": {
+      "input": [
+        "text"
+      ],
+      "output": [
+        "text"
+      ]
+    },
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.75,
+      "cache_write": 15
+    },
+    "limit": {
+      "context": 256000,
+      "output": 64000
     }
   },
   {

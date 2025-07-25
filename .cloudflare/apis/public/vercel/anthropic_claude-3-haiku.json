@@ -1,0 +1,32 @@
+{
+  "id": "anthropic/claude-3-haiku",
+  "name": "Claude Haiku 3",
+  "provider": "Vercel AI Gateway",
+  "provider_id": "vercel",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2023-08-31",
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0.25,
+    "output": 1.25,
+    "cache_read": 0.03,
+    "cache_write": 0.3
+  },
+  "limit": {
+    "context": 200000,
+    "output": 4096
+  }
+}

@@ -1,8 +1,8 @@
 {
-  "id": "moonshotai/kimi-k2",
-  "name": "Kimi K2",
-  "provider": "OpenRouter",
-  "provider_id": "openrouter",
+  "id": "mistral/ministral-3b",
+  "name": "Ministral 3B",
+  "provider": "Vercel AI Gateway",
+  "provider_id": "vercel",
   "capabilities": [
     "tools"
   ],
@@ -18,11 +18,11 @@
     ]
   },
   "cost": {
-    "input": 0.57,
-    "output": 2.3
+    "input": 0.04,
+    "output": 0.04
   },
   "limit": {
-    "context": 131072,
-    "output": 32768
+    "context": 128000,
+    "output": 128000
   }
 }

@@ -1,0 +1,30 @@
+{
+  "id": "xai/grok-3-fast",
+  "name": "Grok 3 Fast",
+  "provider": "Vercel AI Gateway",
+  "provider_id": "vercel",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-11",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 5,
+    "output": 25,
+    "cache_read": 1.25,
+    "cache_write": 25
+  },
+  "limit": {
+    "context": 131072,
+    "output": 8192
+  }
+}

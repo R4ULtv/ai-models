@@ -1,0 +1,35 @@
+{
+  "id": "google/gemini-2.5-flash",
+  "name": "Gemini 2.5 Flash",
+  "provider": "Vercel AI Gateway",
+  "provider_id": "vercel",
+  "capabilities": [
+    "tools",
+    "reasoning",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2025-01",
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "audio",
+      "video",
+      "pdf"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0.3,
+    "output": 2.5,
+    "cache_read": 0.075
+  },
+  "limit": {
+    "context": 1048576,
+    "output": 65536
+  }
+}

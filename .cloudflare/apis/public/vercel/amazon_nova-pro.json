@@ -1,0 +1,32 @@
+{
+  "id": "amazon/nova-pro",
+  "name": "Nova Pro",
+  "provider": "Vercel AI Gateway",
+  "provider_id": "vercel",
+  "capabilities": [
+    "tools",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2024-10",
+  "modalities": {
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0.8,
+    "output": 3.2,
+    "cache_read": 0.2
+  },
+  "limit": {
+    "context": 300000,
+    "output": 8192
+  }
+}

@@ -1,8 +1,8 @@
 {
-  "id": "moonshotai/kimi-k2",
-  "name": "Kimi K2",
-  "provider": "OpenRouter",
-  "provider_id": "openrouter",
+  "id": "moonshotai/kimi-k2-instruct",
+  "name": "Kimi K2 Instruct",
+  "provider": "Groq",
+  "provider_id": "groq",
   "capabilities": [
     "tools"
   ],
@@ -18,11 +18,11 @@
     ]
   },
   "cost": {
-    "input": 0.57,
-    "output": 2.3
+    "input": 1,
+    "output": 3
   },
   "limit": {
     "context": 131072,
-    "output": 32768
+    "output": 16384
   }
 }

@@ -1,14 +1,14 @@
 {
-  "id": "moonshotai/kimi-k2",
-  "name": "Kimi K2",
-  "provider": "OpenRouter",
-  "provider_id": "openrouter",
+  "id": "xai/grok-3",
+  "name": "Grok 3",
+  "provider": "Vercel AI Gateway",
+  "provider_id": "vercel",
   "capabilities": [
     "tools"
   ],
   "attachment": false,
   "temperature": true,
-  "knowledge": "2024-10",
+  "knowledge": "2024-11",
   "modalities": {
     "input": [
       "text"
@@ -18,11 +18,13 @@
     ]
   },
   "cost": {
-    "input": 0.57,
-    "output": 2.3
+    "input": 3,
+    "output": 15,
+    "cache_read": 0.75,
+    "cache_write": 15
   },
   "limit": {
     "context": 131072,
-    "output": 32768
+    "output": 8192
   }
 }

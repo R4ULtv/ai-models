@@ -1,0 +1,30 @@
+{
+  "id": "v0-1.5-lg",
+  "name": "v0-1.5-lg",
+  "provider": "v0",
+  "provider_id": "v0",
+  "capabilities": [
+    "tools",
+    "reasoning",
+    "vision"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "modalities": {
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 15,
+    "output": 75
+  },
+  "limit": {
+    "context": 512000,
+    "output": 32000
+  }
+}

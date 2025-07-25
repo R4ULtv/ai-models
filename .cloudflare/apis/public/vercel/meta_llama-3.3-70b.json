@@ -1,0 +1,28 @@
+{
+  "id": "meta/llama-3.3-70b",
+  "name": "Llama-3.3-70B-Instruct",
+  "provider": "Vercel AI Gateway",
+  "provider_id": "vercel",
+  "capabilities": [
+    "tools"
+  ],
+  "attachment": true,
+  "temperature": true,
+  "knowledge": "2023-12",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 0,
+    "output": 0
+  },
+  "limit": {
+    "context": 128000,
+    "output": 4096
+  }
+}

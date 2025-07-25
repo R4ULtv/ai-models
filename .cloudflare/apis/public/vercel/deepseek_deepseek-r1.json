@@ -1,0 +1,29 @@
+{
+  "id": "deepseek/deepseek-r1",
+  "name": "DeepSeek-R1",
+  "provider": "Vercel AI Gateway",
+  "provider_id": "vercel",
+  "capabilities": [
+    "tools",
+    "reasoning"
+  ],
+  "attachment": false,
+  "temperature": true,
+  "knowledge": "2024-07",
+  "modalities": {
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ]
+  },
+  "cost": {
+    "input": 1.35,
+    "output": 5.4
+  },
+  "limit": {
+    "context": 128000,
+    "output": 32768
+  }
+}
