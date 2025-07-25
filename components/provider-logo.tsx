@@ -15,6 +15,8 @@ import {
   OpenRouter,
   GoogleCloud,
   Ollama,
+  v0,
+  HuggingFace,
 } from "@/components/icons";
 
 const providerLogoMap: Record<string, React.FC> = {
@@ -33,6 +35,8 @@ const providerLogoMap: Record<string, React.FC> = {
   openrouter: OpenRouter,
   "google-vertex": GoogleCloud,
   ollama: Ollama,
+  v0: v0,
+  huggingface: HuggingFace,
 };
 
 export function ProviderLogo({
