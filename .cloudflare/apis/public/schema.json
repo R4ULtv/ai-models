@@ -3,16 +3,25 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100,
+      "pattern": "^[a-zA-Z0-9_-]+$"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 200
     },
     "provider": {
-      "type": "string"
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100
     },
     "provider_id": {
-      "type": "string"
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100
     },
     "capabilities": {
       "type": "array",
@@ -34,6 +43,7 @@
       "type": "object",
       "properties": {
         "input": {
+          "minItems": 1,
           "type": "array",
           "items": {
             "type": "string",
@@ -41,6 +51,7 @@
           }
         },
         "output": {
+          "minItems": 1,
           "type": "array",
           "items": {
             "type": "string",
@@ -55,16 +66,20 @@
       "type": "object",
       "properties": {
         "input": {
-          "type": "number"
+          "type": "number",
+          "minimum": 0
         },
         "output": {
-          "type": "number"
+          "type": "number",
+          "minimum": 0
         },
         "cache_read": {
-          "type": "number"
+          "type": "number",
+          "minimum": 0
         },
         "cache_write": {
-          "type": "number"
+          "type": "number",
+          "minimum": 0
         }
       },
       "additionalProperties": false
@@ -73,10 +88,12 @@
       "type": "object",
       "properties": {
         "context": {
-          "type": "number"
+          "type": "number",
+          "minimum": 1
         },
         "output": {
-          "type": "number"
+          "type": "number",
+          "minimum": 1
         }
       },
       "required": ["context", "output"],
@@ -85,7 +102,8 @@
     "size": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "number",
+        "minimum": 0
       }
     }
   },
@@ -99,7 +117,8 @@
     "temperature",
     "modalities",
     "cost",
-    "limit"
+    "limit",
+    "size"
   ],
   "additionalProperties": false
 }
